@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head charset="UTF-meta8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companies - Stackly Job Portal</title>
+    <meta name="description" content="Browse top companies hiring on Stackly Job Portal" />
+    <link rel="stylesheet" href="shared.css"> 
+    <link rel="stylesheet" href="Company-listing.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="head-cls">
+            <a href="index.html">
+                <img src="./assets/Stackly-logo-Blue.webp" alt="Stackly Logo" class="logo">
+            </a>
+            <nav class="menu-items" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="jobs-listing.html">Find Jobs</a>
+                <a href="Company-listing.html" class="active">Companies</a>
+                <a href="contact.html">Contact</a>
+                <div class="close-btn material-icons" id="closeMenu">close</div>
+                <div class="head-btns mob-view">
+                    <a href="login.html" class="btn btn-primary">Login</a>
+                    <a href="dashboard.html" class="btn btn-outline">Dashboard</a>
+                </div>
+            </nav>
+            <div class="head-btns">
+                <a href="login.html" class="btn btn-primary">Login</a>
+                <a href="dashboard.html" class="btn btn-outline">Dashboard</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="material-icons">menu</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="company-listing-main">
+        <div class="head-hero">
+            <div class="container"> 
+                <section class="company-hero">
+                    <h1>Discover Top Companies</h1>
+                    <p>Explore thousands of companies actively hiring. Find your perfect workplace.</p>
+ 
+                    <div class="company-search-bar">
+                        <div class="search-input-wrapper">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="companySearchInput"
+                                placeholder="Search companies by name or industry...">
+                        </div>
+                        <div class="filter-dropdowns">
+                            <select id="industryFilter" class="filter-select">
+                                <option value="">All Industries</option>
+                                <option value="Technology">Technology</option>
+                                <option value="E-Commerce">E-Commerce</option>
+                                <option value="Entertainment">Entertainment</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Finance">Finance</option>
+                                <option value="Automotive">Automotive</option>
+                                <option value="Software">Software</option>
+                            </select>
+                            <select id="locationFilter" class="filter-select">
+                                <option value="">All Locations</option>
+                                <option value="CA">California</option>
+                                <option value="WA">Washington</option>
+                                <option value="TX">Texas</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="NY">New York</option>
+                                <option value="Remote">Remote</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" id="searchCompaniesBtn">Search</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="container">
+            <div class="results-info">
+                <span id="companyCount">Loading companies...</span>
+                <div class="view-options">
+                    <button class="view-btn active" data-view="grid" title="Grid View"><i
+                            class="fas fa-th-large"></i></button>
+                    <button class="view-btn" data-view="list" title="List View"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+
+            <div class="companies-grid" id="companiesGrid">
+
+            </div>
+            <div class="no-companies" id="noCompanies" style="display: none;">
+                <i class="fas fa-building"></i>
+                <h3>No companies found</h3>
+                <p>Try adjusting your search criteria</p>
+            </div>
+            <div class="pagination" id="companyPagination">
+                <button class="page-btn" id="prevPage" disabled><i class="fas fa-chevron-left"></i>
+                    Previous</button>
+                <div class="page-numbers" id="pageNumbers"></div>
+                <button class="page-btn" id="nextPage">Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-brand-col">
+                    <img src="./assets/Stackly-logo-Blue.webp" alt="Logo" class="logo">
+                    <p class="footer-bio">
+                        Connecting top talent with industry-leading companies. Build your career, or build your team,
+                        all in one seamless platform.
+                    </p>
+                    <div class="social-links">
+                        <a href="404page.html" aria-label="LinkedIn" class="social-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="404page.html" aria-label="Twitter" class="social-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="404page.html" aria-label="GitHub" class="social-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs-listing.html">Find Jobs</a></li>
+                        <li><a href="Company-listing.html">Companies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-title">For Candidates</h4>
+                    <ul class="footer-list">
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="404page.html">Browse Categories</a></li>
+                        <li><a href="404page.html">Candidate Dashboard</a></li>
+                        <li><a href="404page.html">Job Alerts</a></li>
+                        <li><a href="404page.html">Saved Jobs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 class="footer-title">For Employers</h4>
+                    <ul class="footer-list">
+                        <li><a href="404page.html">Post a Job</a></li>
+                        <li><a href="404page.html">Employer Dashboard</a></li>
+                        <li><a href="404page.html">Pricing & Plans</a></li>
+                        <li><a href="404page.html">Search Resumes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Stackly. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="404page.html">English (US)</a>
+                    <a href="404page.html">Help Center</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        let companiesData = [];
+        let filteredCompanies = [];
+        let currentPage = 1;
+        const companiesPerPage = 12;
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadJobsAndAggregate();
+            renderCompanies();
+            setupEventListeners();
+        });
+
+        async function loadJobsAndAggregate() {
+            try {
+                const response = await fetch('./jobs.json');
+                const jobs = await response.json();
+
+                const companyMap = new Map();
+
+                jobs.forEach(job => {
+                    if (!companyMap.has(job.company)) {
+                        companyMap.set(job.company, {
+                            name: job.company,
+                            logo: job.logo,
+                            locations: new Set(),
+                            jobTypes: new Set(),
+                            experienceLevels: new Set(),
+                            salaryRange: { min: Infinity, max: 0 },
+                            jobCount: 0,
+                            skills: new Set()
+                        });
+                    }
+
+                    const company = companyMap.get(job.company);
+                    company.locations.add(job.location);
+                    company.jobTypes.add(job.type);
+                    company.experienceLevels.add(job.experience || 'Mid-Level');
+
+                    const salaryMatch = job.salary.match(/\$(\d+)k/);
+                    if (salaryMatch) {
+                        const minSal = parseInt(salaryMatch[1]);
+                        if (minSal < company.salaryRange.min) company.salaryRange.min = minSal;
+                        if (minSal > company.salaryRange.max) company.salaryRange.max = minSal;
+                    }
+
+                    company.jobCount++;
+                    if (job.skills) {
+                        job.skills.forEach(skill => company.skills.add(skill));
+                    }
+                });
+
+                companiesData = Array.from(companyMap.values()).map(c => ({
+                    name: c.name,
+                    logo: c.logo,
+                    locations: Array.from(c.locations),
+                    jobTypes: Array.from(c.jobTypes),
+                    experienceLevels: Array.from(c.experienceLevels),
+                    salaryRange: c.salaryRange.min === Infinity ? null : `$${c.salaryRange.min}k - $${c.salaryRange.max}k`,
+                    jobCount: c.jobCount,
+                    skills: Array.from(c.skills).slice(0, 5),
+                    industry: getIndustry(c.name),
+                    rating: (4.0 + Math.random() * 1).toFixed(1)
+                }));
+
+                filteredCompanies = [...companiesData];
+            } catch (error) {
+                console.error('Error loading jobs:', error);
+            }
+        }
+
+        function getIndustry(companyName) {
+            const industries = {
+                'Google': 'Technology',
+                'Amazon': 'E-Commerce',
+                'Microsoft': 'Technology',
+                'Meta': 'Technology',
+                'Netflix': 'Entertainment',
+                'Apple': 'Technology',
+                'Tesla': 'Automotive',
+                'IBM': 'Technology',
+                'HubSpot': 'Marketing',
+                'Adobe': 'Software',
+                'Salesforce': 'Software'
+            };
+            return industries[companyName] || 'Technology';
+        }
+
+        function renderCompanies() {
+            const grid = document.getElementById('companiesGrid');
+            const noResults = document.getElementById('noCompanies');
+            const pagination = document.getElementById('companyPagination');
+
+            if (filteredCompanies.length === 0) {
+                grid.innerHTML = '';
+                noResults.style.display = 'flex';
+                pagination.style.display = 'none';
+                document.getElementById('companyCount').textContent = '0 companies found';
+                return;
+            }
+
+            noResults.style.display = 'none';
+            const totalPages = Math.ceil(filteredCompanies.length / companiesPerPage);
+            const startIndex = (currentPage - 1) * companiesPerPage;
+            const endIndex = startIndex + companiesPerPage;
+            const pageCompanies = filteredCompanies.slice(startIndex, endIndex);
+
+            document.getElementById('companyCount').textContent =
+                `Showing ${filteredCompanies.length} companies`;
+
+            grid.innerHTML = pageCompanies.map(company => createCompanyCard(company)).join('');
+
+            if (totalPages > 1) {
+                pagination.style.display = 'flex';
+                renderPagination(totalPages);
+            } else {
+                pagination.style.display = 'none';
+            }
+        }
+
+        function createCompanyCard(company) {
+            const topSkills = company.skills.slice(0, 3).map(skill =>
+                `<span class="skill-tag">${skill}</span>`
+            ).join('');
+
+            const primaryLocation = company.locations[0];
+
+            return `
+                <div class="company-card" data-company="${company.name.toLowerCase()}">
+                    <div class="company-banner-img"></div>
+                    <div class="company-logo-wrapper">
+                        <img src="${company.logo}" alt="${company.name}" class="company-logo">
+                    </div>
+                    <div class="company-info">
+                        <h3 class="company-name">${company.name}</h3>
+                        <p class="company-industry"><i class="fas fa-briefcase"></i> ${company.industry}</p>
+                        <p class="company-location"><i class="fas fa-map-marker-alt"></i> ${primaryLocation}${company.locations.length > 1 ? ` +${company.locations.length - 1} more` : ''}</p>
+                        
+                        <div class="company-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">${company.jobCount}</span>
+                                <span class="stat-label">Open Jobs</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">${company.rating}</span>
+                                <span class="stat-label">Rating</span>
+                            </div>
+                        </div>
+                        
+                        <div class="company-skills">
+                            ${topSkills}
+                        </div>
+                    </div>
+                    <a href="company.html?company=${encodeURIComponent(company.name)}" class="btn-view-jobs">
+                        View All Jobs <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            `;
+        }
+
+        function renderPagination(totalPages) {
+            const container = document.getElementById('pageNumbers');
+            let html = '';
+
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === 1 || i === totalPages || (i >= currentPage - 1 && i <= currentPage + 1)) {
+                    html += `<button class="page-number ${i === currentPage ? 'active' : ''}" data-page="${i}">${i}</button>`;
+                } else if (i === currentPage - 2 || i === currentPage + 2) {
+                    html += `<span class="dots">...</span>`;
+                }
+            }
+
+            container.innerHTML = html;
+            document.getElementById('prevPage').disabled = currentPage === 1;
+            document.getElementById('nextPage').disabled = currentPage === totalPages;
+        }
+
+        function filterCompanies() {
+            const searchTerm = document.getElementById('companySearchInput').value.toLowerCase();
+            const industry = document.getElementById('industryFilter').value;
+            const location = document.getElementById('locationFilter').value;
+
+            filteredCompanies = companiesData.filter(company => {
+                const matchesSearch = !searchTerm ||
+                    company.name.toLowerCase().includes(searchTerm) ||
+                    company.industry.toLowerCase().includes(searchTerm);
+
+                const matchesIndustry = !industry || company.industry === industry;
+
+                const matchesLocation = !location ||
+                    company.locations.some(loc => loc.includes(location) || (location === 'Remote' && loc.toLowerCase().includes('remote')));
+
+                return matchesSearch && matchesIndustry && matchesLocation;
+            });
+
+            currentPage = 1;
+            renderCompanies();
+        }
+
+        function setupEventListeners() {
+            document.getElementById('searchCompaniesBtn').addEventListener('click', filterCompanies);
+            document.getElementById('companySearchInput').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') filterCompanies();
+            });
+
+            document.getElementById('industryFilter').addEventListener('change', filterCompanies);
+            document.getElementById('locationFilter').addEventListener('change', filterCompanies);
+
+            document.getElementById('prevPage').addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderCompanies();
+                    window.scrollTo({ top: 300, behavior: 'smooth' });
+                }
+            });
+
+            document.getElementById('nextPage').addEventListener('click', () => {
+                const totalPages = Math.ceil(filteredCompanies.length / companiesPerPage);
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderCompanies();
+                    window.scrollTo({ top: 300, behavior: 'smooth' });
+                }
+            });
+
+            document.getElementById('pageNumbers').addEventListener('click', (e) => {
+                if (e.target.classList.contains('page-number')) {
+                    currentPage = parseInt(e.target.dataset.page);
+                    renderCompanies();
+                    window.scrollTo({ top: 300, behavior: 'smooth' });
+                }
+            });
+            document.querySelectorAll('.view-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const grid = document.getElementById('companiesGrid');
+                    if (btn.dataset.view === 'list') {
+                        grid.classList.add('list-view');
+                    } else {
+                        grid.classList.remove('list-view');
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>

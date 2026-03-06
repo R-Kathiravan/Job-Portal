@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Stackly</title>
+    <link rel="stylesheet" href="shared.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="error-page-body">
+    <style>
+        .error-page-body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: var(--color-bg-body);
+        }
+
+        .error-container {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .error-content {
+            max-width: 600px;
+            background-color: var(--color-bg-surface);
+            padding: 4rem 2rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--color-border);
+            box-shadow: var(--shadow-md);
+        }
+
+        .error-icon {
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+        .error-icon span{font-size: 4rem;}
+
+        .error-code {
+            font-size: 6rem;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .error-heading {
+            font-size: 2rem;
+            color: var(--color-text-main);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .error-description {
+            font-size: 1.125rem;
+            color: var(--color-text-muted);
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        @media (max-width: 576px) {
+            .error-code {
+                font-size: 4.5rem;
+            }
+
+            .error-heading {
+                font-size: 1.5rem;
+            }
+
+            .error-actions {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .error-actions .btn {
+                width: 100%;
+            }
+        }
+    </style>
+    <main class="error-container">
+        <div class="error-content">
+
+            <div class="error-icon">
+                <span class="material-icons">saved_search</span>
+            </div>
+
+            <h1 class="error-code text-gradient">404</h1>
+
+            <h2 class="error-heading">Oops! This page took a day off.</h2>
+
+            <p class="error-description">
+                The job listing or page you are looking for might have been filled, removed, had its name changed, or is
+                temporarily unavailable.
+            </p>
+
+            <div class="error-actions">
+                <a href="jobs-listing.html" class="btn btn-primary btn-lg">Browse Open Jobs</a>
+                <a href="index.html" class="btn btn-outline btn-lg">Back to Homepage</a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

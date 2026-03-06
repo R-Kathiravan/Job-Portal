@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Job Portal </title>
+    <meta name="description" content="Stackly Job portal helps you to find your dream job" />
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="head-cls">
+            <a href="index.html">
+                <img src="./assets/Stackly-logo-Blue.webp" alt="Stackly Logo" class="logo">
+            </a>
+            <nav class="menu-items" id="navMenu">
+                <a href="index.html" class="active">Home</a>
+                <a href="jobs-listing.html">Find Jobs</a>
+                <a href="Company-listing.html">Companies</a>
+                <a href="contact.html">Contact</a>
+                <div class="close-btn material-icons" id="closeMenu">close</div>
+                <div class="head-btns mob-view">
+                    <a href="login.html" class="btn btn-primary">Login</a>
+                    <a href="dashboard.html" class="btn btn-outline">Dashboard</a>
+                </div>
+            </nav>
+            <div class="head-btns">
+                <a href="login.html" class="btn btn-primary">Login</a>
+                <a href="dashboard.html" class="btn btn-outline">Dashboard</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="material-icons">menu</span>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+
+                <div class="hero-text-slider" id="textSlider">
+                    <div class="slide-text active">
+                        <h1 class="hero-head">
+                            Start Building Your <span class="text-gradient">Dream Career</span> with Stackly
+                        </h1>
+                        <p class="hero-desc">Find Jobs, Employment & Career Opportunities. Some of the companies we've
+                            helped recruit excellent applicants over the years.</p>
+                    </div>
+                    <div class="slide-text">
+                        <h1 class="hero-head">
+                            Discover <span class="text-gradient">Top Companies</span> Hiring Right Now
+                        </h1>
+                        <p class="hero-desc">Connect with industry-leading brands and fast-growing startups looking for
+                            talent exactly like yours.</p>
+                    </div>
+                    <div class="slide-text">
+                        <h1 class="hero-head">
+                            Embrace <span class="text-gradient">Remote Work</span> From Anywhere
+                        </h1>
+                        <p class="hero-desc">Explore thousands of fully remote opportunities and build a career that
+                            fits your lifestyle perfectly.</p>
+                    </div>
+                </div>
+
+                <div class="hero-search-wrapper">
+                    <div class="hero-search-box">
+
+                        <div class="search-field">
+                            <span class="search-icon">
+                                <i class="fas fa-search"></i>
+                            </span>
+
+                            <input type="text" id="keywordInput" placeholder="Job title, keywords, or company"
+                                class="search-input">
+                        </div>
+
+                        <div class="search-divider"></div>
+
+                        <div class="search-field location-field">
+                            <span class="search-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span>
+
+                            <input type="text" id="locationInput" placeholder="City, state, or 'Remote'"
+                                class="search-input">
+                        </div>
+
+                        <button class="btn btn-primary btn-search" id="searchBtn">
+                            <span class="btn-text">Search Jobs</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+
+                    </div>
+
+                    <span class="error-message" id="searchError"></span>
+                    <div class="hero-popular-search">
+                        <span class="popular-label">Popular:</span>
+                        <span class="popular-tag">Designer</span>
+                        <span class="popular-tag">Developer</span>
+                        <span class="popular-tag">Web</span>
+                        <span class="popular-tag">IOS</span>
+                        <span class="popular-tag">Remote</span>
+                    </div>
+                </div>
+
+                <div class="hero-trust-stats">
+                    <div class="trust-item">
+                        <span class="trust-number">5k+</span>
+                        <span class="trust-label">Candidates Hired</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <span class="trust-number">1.2k+</span>
+                        <span class="trust-label">Companies</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <span class="trust-number">8k+</span>
+                        <span class="trust-label">Active Jobs</span>
+                    </div>
+                </div>
+
+                <div class="hero">
+                    <div class="avatar-stack-candidates">
+                        <img src="./assets/review1.webp" alt="Candidate" class="avatar-img">
+                        <img src="./assets/review2.webp" alt="Candidate" class="avatar-img">
+                        <img src="./assets/review3.webp" alt="Candidate" class="avatar-img">
+                        <img src="./assets/review4.webp" alt="Candidate" class="avatar-img">
+                        <div class="avatar-more">+5k</div>
+                    </div>
+                    <div class="candidate-info">
+                        <span class="candidate-count">5,000+</span>
+                        <span class="candidate-text">candidates got their dream job</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="hero-img-container" id="imgSlider">
+                    <img src="./assets/hero1.webp" alt="Team collaborating" class="slide-img active" loading="lazy">
+                    <img src="./assets/hero2.webp" alt="Professional working" class="slide-img" loading="lazy">
+                    <img src="./assets/hero3.webp" alt="Remote workspace" class="slide-img" loading="lazy">
+                </div>
+                <div class="hero-card card-1">
+                    <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="card-content">
+                        <span class="card-value">500+</span>
+                        <span class="card-label">New Jobs Posted</span>
+                    </div>
+                </div>
+                <div class="hero-card card-2">
+                    <div class="card-icon success"><i class="fas fa-check-circle"></i></div>
+                    <div class="card-content">
+                        <span class="card-value">98%</span>
+                        <span class="card-label">Success Rate</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="trust-section">
+        <p class="trust-title">Trusted by industry leaders worldwide</p>
+
+        <div class="marquee-container">
+            <div class="marquee-track">
+
+                <div class="marquee-logos">
+                    <img src="./assets/logo-google.webp" alt="Google">
+                    <img src="./assets/logo-microsoft.webp" alt="Microsoft">
+                    <img src="./assets/logo-slack.webp" alt="Slack">
+                    <img src="./assets/logo-netfilx.webp" alt="Netflix">
+                    <img src="./assets/logo-ibm.webp" alt="IBM">
+                    <img src="./assets/logo-amazon.webp" alt="Amazon">
+                    <img src="./assets/logo-spotify.webp" alt="Spotify">
+                    <img src="./assets/logo-meta.webp" alt="Meta">
+                    <img src="./assets/logo-airbnb.webp" alt="Airbnb">
+                    <img src="./assets/logo-agobe.webp" alt="Adobe">
+                </div>
+
+                <div class="marquee-logos" aria-hidden="true">
+                    <img src="./assets/logo-google.webp" alt="Google">
+                    <img src="./assets/logo-microsoft.webp" alt="Microsoft">
+                    <img src="./assets/logo-slack.webp" alt="Slack">
+                    <img src="./assets/logo-netfilx.webp" alt="Netflix">
+                    <img src="./assets/logo-ibm.webp" alt="IBM">
+                    <img src="./assets/logo-amazon.webp" alt="Amazon">
+                    <img src="./assets/logo-spotify.webp" alt="Spotify">
+                    <img src="./assets/logo-meta.webp" alt="Meta">
+                    <img src="./assets/logo-airbnb.webp" alt="Airbnb">
+                    <img src="./assets/logo-agobe.webp" alt="Adobe">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="job-categories">
+        <div class="container">
+            <div class="section-header">
+                <h1>Popular Job Categories</h1>
+                <p>Explore trending career opportunities across different industries. Find roles that match your skills
+                    and start your professional journey today.</p>
+            </div>
+
+            <div class="categories-container">
+
+                <div class="category-card">
+                    <span class="material-icons">code</span>
+                    <div class="category-name">Software Development</div>
+                </div>
+
+                <div class="category-card">
+                    <span class="material-icons">design_services</span>
+                    <div class="category-name">UI / UX Design</div>
+                </div>
+
+                <div class="category-card">
+                    <span class="material-icons">campaign</span>
+                    <div class="category-name">Digital Marketing</div>
+                </div>
+
+                <div class="category-card">
+                    <span class="material-icons">bar_chart</span>
+                    <div class="category-name">Data Analysis</div>
+                </div>
+
+                <div class="category-card">
+                    <span class="material-icons">support_agent</span>
+                    <div class="category-name">Customer Support</div>
+                </div>
+
+                <div class="category-card">
+                    <span class="material-icons">account_balance</span>
+                    <div class="category-name">Finance & Accounting</div>
+                </div>
+
+                <div class="category-card">
+                    <span class="material-icons">engineering</span>
+                    <div class="category-name">Engineering</div>
+                </div>
+
+                <div class="category-card">
+                    <span class="material-icons">groups</span>
+                    <div class="category-name">Human Resources</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="featured-companies">
+        <div class="container">
+            <div class="section-header">
+                <h1>Featured Companies</h1>
+                <p>Discover top companies actively hiring. Join industry leaders and fast-growing startups looking for
+                    talented professionals like you.</p>
+            </div>
+
+            <div class="companies-grid">
+                <div class="company-card">
+                    <div class="company-banner">
+                        <img src="./assets/company1.webp" alt="Office">
+                    </div>
+                    <div class="company-info">
+                        <div class="company-logo-large">
+                            <img src="./assets/logo-google.webp" alt="Google">
+                        </div>
+                        <div class="company-details">
+                            <h3>Google</h3>
+                            <p class="company-industry"><i class="fas fa-briefcase"></i> Technology</p>
+                            <p class="company-location"><i class="fas fa-map-marker-alt"></i> Mountain View, CA</p>
+                        </div>
+                    </div>
+                    <div class="company-stats">
+                        <div class="stat">
+                            <span class="stat-value">4.8</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                    </div>
+                    <a href="company.html?company=Google" class="btn-view-jobs" data-company="Google">View All Jobs <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-banner">
+                        <img src="./assets/company2.webp" alt="Office">
+                    </div>
+                    <div class="company-info">
+                        <div class="company-logo-large">
+                            <img src="./assets/logo-amazon.webp" alt="Amazon">
+                        </div>
+                        <div class="company-details">
+                            <h3>Amazon</h3>
+                            <p class="company-industry"><i class="fas fa-briefcase"></i> E-Commerce</p>
+                            <p class="company-location"><i class="fas fa-map-marker-alt"></i> Seattle, WA</p>
+                        </div>
+                    </div>
+                    <div class="company-stats">
+                        <div class="stat">
+                            <span class="stat-value">4.5</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                    </div>
+                    <a href="company.html?company=Amazon" class="btn-view-jobs" data-company="Amazon">View All Jobs <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-banner">
+                        <img src="./assets/company3.webp" alt="Office">
+                    </div>
+                    <div class="company-info">
+                        <div class="company-logo-large">
+                            <img src="./assets/logo-microsoft.webp" alt="Microsoft">
+                        </div>
+                        <div class="company-details">
+                            <h3>Microsoft</h3>
+                            <p class="company-industry"><i class="fas fa-briefcase"></i> Technology</p>
+                            <p class="company-location"><i class="fas fa-map-marker-alt"></i> Redmond, WA</p>
+                        </div>
+                    </div>
+                    <div class="company-stats">
+                        <div class="stat">
+                            <span class="stat-value">4.7</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                    </div>
+                    <a href="company.html?company=Microsoft" class="btn-view-jobs" data-company="Microsoft">View All
+                        Jobs <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-banner">
+                        <img src="./assets/company4.webp" alt="Office">
+                    </div>
+                    <div class="company-info">
+                        <div class="company-logo-large">
+                            <img src="./assets/logo-meta.webp" alt="Meta">
+                        </div>
+                        <div class="company-details">
+                            <h3>Meta</h3>
+                            <p class="company-industry"><i class="fas fa-briefcase"></i> Social Media</p>
+                            <p class="company-location"><i class="fas fa-map-marker-alt"></i> Menlo Park, CA</p>
+                        </div>
+                    </div>
+                    <div class="company-stats">
+                        <div class="stat">
+                            <span class="stat-value">4.6</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                    </div>
+                    <a href="company.html?company=Meta" class="btn-view-jobs" data-company="Meta">View All Jobs <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-banner">
+                        <img src="./assets/company5.webp" alt="Office">
+                    </div>
+                    <div class="company-info">
+                        <div class="company-logo-large">
+                            <img src="./assets/logo-agobe.webp" alt="Adobe">
+                        </div>
+                        <div class="company-details">
+                            <h3>Adobe</h3>
+                            <p class="company-industry"><i class="fas fa-briefcase"></i> Software</p>
+                            <p class="company-location"><i class="fas fa-map-marker-alt"></i> San Jose, CA</p>
+                        </div>
+                    </div>
+                    <div class="company-stats">
+                        <div class="stat">
+                            <span class="stat-value">4.9</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                    </div>
+                    <a href="company.html?company=Adobe" class="btn-view-jobs" data-company="Adobe">View All Jobs <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-banner">
+                        <img src="./assets/company6.webp" alt="Office">
+                    </div>
+                    <div class="company-info">
+                        <div class="company-logo-large">
+                            <img src="./assets/logo-netfilx.webp" alt="Netflix">
+                        </div>
+                        <div class="company-details">
+                            <h3>Netflix</h3>
+                            <p class="company-industry"><i class="fas fa-briefcase"></i> Entertainment</p>
+                            <p class="company-location"><i class="fas fa-map-marker-alt"></i> Los Gatos, CA</p>
+                        </div>
+                    </div>
+                    <div class="company-stats">
+                        <div class="stat">
+                            <span class="stat-value">4.9</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                    </div>
+                    <a href="company.html?company=Netflix" class="btn-view-jobs" data-company="Netflix">View All Jobs <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="Company-listing.html" class="btn btn-outline btn-lg">View All Companies <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pop-jobs">
+        <div class="container">
+            <div class="section-header">
+                <h1>Popular Jobs</h1>
+                <p>Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on
+                    over 30000+ companies worldwide..</p>
+            </div>
+            <div class="jobs-container">
+                <div class="job-grid" id="jobListingsContainer">
+
+                </div>
+                <a href="jobs-listing.html" class="btn btn-outline">View More</a>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works-section">
+        <div class="container">
+
+            <div class="section-header text-center">
+                <h2>How Stackly Works</h2>
+                <p>Your dream job is just three simple steps away.</p>
+            </div>
+
+            <div class="process-grid">
+
+                <div class="process-step">
+                    <div class="step-icon-wrapper">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <span class="material-icons">person</span>
+
+                        </div>
+                    </div>
+                    <h3 class="step-title">Create Account</h3>
+                    <p class="step-desc">Build your profile in minutes. Add your skills, experience, and let employers
+                        know you are ready.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-icon-wrapper">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <span class="material-icons">drive_folder_upload</span>
+
+                        </div>
+                    </div>
+                    <h3 class="step-title">Upload Resume</h3>
+                    <p class="step-desc">Upload your latest CV. Our smart matching system will instantly connect you
+                        with the right roles.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-icon-wrapper">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <span class="material-icons">celebration</span>
+                        </div>
+                    </div>
+                    <h3 class="step-title">Apply & Get Hired</h3>
+                    <p class="step-desc">Browse top companies, apply with a single click, and land the career you've
+                        been waiting for.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="testimonial">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Testimonials</h2>
+                <p>Find out why people trust our exceptional expertise.</p>
+            </div>
+            <div class="testimonial-container">
+                <div class="testimonial-image-col">
+                    <img src="" alt="Selected Person" id="main-testimonial-img">
+                </div>
+                <div class="testimonial-content">
+                    <div class="testimonial-avatars">
+                        <img src="./assets/review2.webp" alt="Person 1" class="avatar active" data-index="0">
+                        <img src="./assets/review3.webp" alt="Person 2" class="avatar" data-index="1">
+                        <img src="./assets/review1.webp" alt="Person 3" class="avatar" data-index="2">
+                        <img src="./assets/review5.webp" alt="Person 4" class="avatar" data-index="3">
+                        <img src="./assets/review4.webp" alt="Person 5" class="avatar" data-index="4">
+                    </div>
+                    <div class="testimonial-text-col">
+                        <blockquote id="testimonial-quote">
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <h4 id="author-name"></h4>
+                            <p id="author-role"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter-section">
+        <div class="container newsletter-container">
+            <div class="newsletter-content">
+                <h2>Never Miss a Great Opportunity</h2>
+                <p>Get personalized job alerts, career advice, and industry insights delivered straight to your inbox
+                    every week.</p>
+
+                <form id="newsletterForm" class="newsletter-form" novalidate>
+                    <div class="input-group">
+                        <input type="email" id="newsletterEmail" class="form-control"
+                            placeholder="Enter your email address" autocomplete="email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                    <span id="newsletterMessage" class="validation-message"></span>
+                </form>
+
+                <p class="privacy-note">We care about your data. Read our <a href="404page.html">Privacy Policy</a>.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-brand-col">
+                    <img src="./assets/Stackly-logo-Blue.webp" alt="Logo" class="logo">
+                    <p class="footer-bio">
+                        Connecting top talent with industry-leading companies. Build your career, or build your team,
+                        all in one seamless platform.
+                    </p>
+                    <div class="social-links">
+                        <a href="404page.html" aria-label="LinkedIn" class="social-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="404page.html" aria-label="Twitter" class="social-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="404page.html" aria-label="GitHub" class="social-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs-listing.html">Find Jobs</a></li>
+                        <li><a href="Company-listing.html">Companies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-title">For Candidates</h4>
+                    <ul class="footer-list">
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="404page.html">Browse Categories</a></li>
+                        <li><a href="404page.html">Candidate Dashboard</a></li>
+                        <li><a href="404page.html">Job Alerts</a></li>
+                        <li><a href="404page.html">Saved Jobs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 class="footer-title">For Employers</h4>
+                    <ul class="footer-list">
+                        <li><a href="404page.html">Post a Job</a></li>
+                        <li><a href="404page.html">Employer Dashboard</a></li>
+                        <li><a href="404page.html">Pricing & Plans</a></li>
+                        <li><a href="404page.html">Search Resumes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Stackly. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="404page.html">English (US)</a>
+                    <a href="404page.html">Help Center</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const textSlides = document.querySelectorAll('.slide-text');
+            const imgSlides = document.querySelectorAll('.slide-img');
+            let currentSlide = 0;
+            const slideInterval = 4000;
+
+            function nextSlide() {
+                textSlides[currentSlide].classList.remove('active');
+                imgSlides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % textSlides.length;
+                textSlides[currentSlide].classList.add('active');
+                imgSlides[currentSlide].classList.add('active');
+            }
+
+            setInterval(nextSlide, slideInterval);
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const jobContainer = document.getElementById('jobListingsContainer');
+            if (!jobContainer) return;
+            const urlParams = new URLSearchParams(window.location.search);
+            const companyFilter = urlParams.get('company');
+
+            loadJobs(companyFilter);
+
+            async function loadJobs(company) {
+
+                try {
+
+                    const response = await fetch('./jobs.json');
+
+                    if (!response.ok) {
+                        throw new Error("Failed to load jobs.json");
+                    }
+
+                    let jobs = await response.json();
+
+                    if (company) {
+                        jobs = jobs.filter(job => job.company.toLowerCase() === company.toLowerCase());
+
+                        if (jobs.length > 0) {
+                            document.querySelector('.pop-jobs .section-header h1').textContent = `Jobs at ${company}`;
+                            document.querySelector('.pop-jobs .section-header p').textContent = `Showing ${jobs.length} job${jobs.length !== 1 ? 's' : ''} at ${company}`;
+                        }
+                    }
+
+                    jobContainer.innerHTML = '';
+
+                    if (jobs.length === 0) {
+                        jobContainer.innerHTML = '<p class="no-jobs-message">No jobs found for this company.</p>';
+                        return;
+                    }
+                    const recentJobs = jobs.slice(0, 6);
+
+                    recentJobs.forEach(job => {
+
+                        const tags = job.tags || job.skills || [];
+
+                        const tagsHTML = tags.slice(0, 4).map(tag =>
+                            `<span class="skill-tag">${tag}</span>`
+                        ).join('');
+
+                        const cardHTML = `
+                <div class="job-card-new">
+                    <div class="card-header">
+                        <div class="company-logo-wrapper">
+                            <img src="${job.logo}" alt="${job.company}" class="company-logo">
+                        </div>
+                        <div class="job-type-badge">${job.type || 'Full-Time'}</div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <h3 class="job-title">
+                            <a href="job-desc.html?id=${job.id}">${job.title}</a>
+                        </h3>
+                        <p class="company-name">
+                            <i class="fas fa-building"></i> ${job.company}
+                        </p>
+                        <p class="job-location">
+                            <i class="fas fa-map-marker-alt"></i> ${job.location}
+                        </p>
+                        
+                        <div class="skills-row">
+                            ${tagsHTML}
+                            ${tags.length > 4 ? `<span class="skill-tag skill-more">+${tags.length - 4}</span>` : ''}
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="salary-wrapper">
+                            <span class="salary-label">Salary</span>
+                            <span class="salary-value">${job.salary}</span>
+                        </div>
+                        <div class="job-meta-info">
+                            <span class="posted-time"><i class="far fa-clock"></i> ${job.posted ? job.posted + 'd ago' : 'Recently'}</span>
+                        </div>
+                    </div>
+                    
+                    <a href="job-desc.html?id=${job.id}" class="btn-apply-card">
+                        Apply Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                `;
+
+                        jobContainer.insertAdjacentHTML('beforeend', cardHTML);
+
+                    });
+
+                } catch (error) {
+
+                    console.error('Error loading jobs:', error);
+
+                    jobContainer.innerHTML =
+                        `<p class="error-msg">⚠ Unable to load jobs. Please try again later.</p>`;
+
+                }
+
+            }
+            document.getElementById("searchBtn").addEventListener("click", function () {
+
+                const keyword = document.getElementById("keywordInput").value.trim();
+                const location = document.getElementById("locationInput").value.trim();
+                const error = document.getElementById("searchError");
+
+                error.textContent = "";
+
+                if (keyword === "" && location === "") {
+                    error.textContent = "Please enter a job title or location.";
+                    return;
+                }
+
+                const params = new URLSearchParams();
+
+                if (keyword) {
+                    params.append("keyword", keyword);
+                }
+
+                if (location) {
+                    params.append("location", location);
+                }
+
+                window.location.href = "jobs-listing.html?" + params.toString();
+            });
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const testimonials = [
+                {
+                    largeImg: './assets/review2.webp',
+                    quote: '“Stackly made finding my dream job completely effortless. Within a week of uploading my resume, I was interviewing with top tech companies.”',
+                    name: 'Hannah Devon',
+                    role: 'Frontend Developer at Google'
+                },
+                {
+                    largeImg: './assets/review3.webp',
+                    quote: '“We used to struggle to find qualified candidates. Since we started posting our open roles here, our hiring time has been cut in half.”',
+                    name: 'Mark Henderson',
+                    role: 'Talent Acquisition Lead, InnovateTech'
+                },
+                {
+                    largeImg: './assets/review1.webp',
+                    quote: '“The smart matching system is incredible. It instantly connected me with fully remote opportunities that perfectly fit my skill set.”',
+                    name: 'Sarah Jenkins',
+                    role: 'Remote UI/UX Designer'
+                },
+                {
+                    largeImg: './assets/review5.webp',
+                    quote: '“The quality of applicants we receive through this platform is unmatched. It is our go-to solution for building out our engineering teams.”',
+                    name: 'David Chen',
+                    role: 'VP of Engineering, Apex Solutions'
+                },
+                {
+                    largeImg: './assets/review4.webp',
+                    quote: '“I transitioned into a totally new industry seamlessly thanks to their job alerts. I highly recommend this portal to any job seeker.”',
+                    name: 'Michelle Dubois',
+                    role: 'Data Analyst at Spotify'
+                }
+            ];
+
+            const avatars = document.querySelectorAll('.avatar');
+            const mainImg = document.getElementById('main-testimonial-img');
+            const quote = document.getElementById('testimonial-quote');
+            const name = document.getElementById('author-name');
+            const role = document.getElementById('author-role');
+
+            let currentIndex = 0;
+            let autoPlayTimer;
+            const slideDuration = 5000;
+
+            function updateTestimonial(index) {
+                currentIndex = parseInt(index);
+                const data = testimonials[currentIndex];
+                mainImg.style.opacity = 0;
+                setTimeout(() => {
+                    mainImg.src = data.largeImg;
+                    mainImg.alt = data.name;
+                    mainImg.style.opacity = 1;
+                }, 200);
+
+                quote.textContent = data.quote;
+                name.textContent = data.name;
+                role.textContent = data.role;
+
+                avatars.forEach(avatar => avatar.classList.remove('active'));
+                if (avatars[currentIndex]) {
+                    avatars[currentIndex].classList.add('active');
+                }
+            }
+
+            function startAutoPlay() {
+                autoPlayTimer = setInterval(() => {
+                    let nextIndex = (currentIndex + 1) % testimonials.length;
+                    updateTestimonial(nextIndex);
+                }, slideDuration);
+            }
+
+            function resetAutoPlay() {
+                clearInterval(autoPlayTimer);
+                startAutoPlay();
+            }
+
+            avatars.forEach(avatar => {
+                avatar.addEventListener('click', function () {
+                    const index = this.getAttribute('data-index');
+                    updateTestimonial(index);
+                    resetAutoPlay();
+                });
+            });
+
+            if (testimonials.length > 0 && mainImg) {
+                updateTestimonial(0);
+                startAutoPlay();
+            }
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('newsletterForm');
+            const emailInput = document.getElementById('newsletterEmail');
+            const messageEl = document.getElementById('newsletterMessage');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const emailValue = emailInput.value.trim();
+                if (emailValue === '') {
+                    showMessage('Please enter an email address.', 'error');
+                    return;
+                }
+                if (!emailRegex.test(emailValue)) {
+                    showMessage('Please enter a valid email address.', 'error');
+                    return;
+                }
+
+                showMessage('Subscribing...', 'success');
+
+                setTimeout(() => {
+                    window.location.href = '404page.html';
+                    form.reset();
+
+                    setTimeout(() => {
+                        messageEl.classList.remove('show');
+                    }, 4000);
+
+                }, 1000);
+            });
+
+            function showMessage(text, type) {
+                messageEl.textContent = text;
+                messageEl.className = 'validation-message show';
+                messageEl.classList.add(type);
+            }
+            emailInput.addEventListener('input', () => {
+                if (messageEl.classList.contains('error')) {
+                    messageEl.classList.remove('show');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Stackly Job Portal</title>
+    <meta name="description" content="Get in touch with Stackly Job Portal. We're here to help!" />
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="head-cls">
+            <a href="index.html">
+                <img src="./assets/Stackly-logo-Blue.webp" alt="Stackly Logo" class="logo">
+            </a>
+            <nav class="menu-items" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="jobs-listing.html">Find Jobs</a>
+                <a href="Company-listing.html">Companies</a>
+                <a href="contact.html" class="active">Contact</a>
+                <div class="close-btn material-icons" id="closeMenu">close</div>
+                <div class="head-btns mob-view">
+                    <a href="login.html" class="btn btn-primary">Login</a>
+                    <a href="dashboard.html" class="btn btn-outline">Dashboard</a>
+                </div>
+            </nav>
+            <div class="head-btns">
+                <a href="login.html" class="btn btn-primary">Login</a>
+                <a href="dashboard.html" class="btn btn-outline">Dashboard</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="material-icons">menu</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="contact-main">
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                </p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p>Stackly Phase 1<br>Salem, Tamil Nadu</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>+91 9876543210<br>Mon - Fri: 9AM - 6PM PST</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>support@thestackly.com<br>careers@thestackly.com</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <h3>Live Chat</h3>
+                        <p>Available 24/7<br>Click to start chatting</p>
+                        <button class="btn btn-primary chat-btn" onclick="openChat()">Start Chat</button>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                    </div>
+
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required placeholder="John">
+                                <span class="error-message" id="firstNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+                                <span class="error-message" id="lastNameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="careers">Careers & Jobs</option>
+                                    <option value="partnership">Partnership</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="billing">Billing</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="error-message" id="subjectError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required
+                                    placeholder="Tell us how we can help you..."></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="label-text">Subscribe to our newsletter for job alerts and career
+                                        tips</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                    </form>
+                    <div class="success-message" id="successMessage" style="display: none;">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                        <button class="btn btn-outline" onclick="resetForm()">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> How do I post a job on Stackly?</h3>
+                    <p>Companies can post jobs by creating an account and accessing the employer dashboard. Post up
+                        to 5 jobs for free!</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Is it free to search for jobs?</h3>
+                    <p>Yes! Job seekers can search and apply for jobs completely free of charge.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> How do I reset my password?</h3>
+                    <p>Click on "Login" then "Forgot Password" to receive a password reset link via email.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Can I get my resume reviewed?</h3>
+                    <p>Yes! Visit our Services page to learn about our professional resume review service.</p>
+                </div>
+        </section>
+        <section class="map-section">
+            <h2>Find Our Office</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616098770783!2d78.17140487459903!3d11.68295658852636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1771822523831!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="map-content">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Stacly Phase1, Salem, Tamil Nadu</p>
+                        <a href="404page.html">Click to open in Google Maps</a>
+                    </div>
+                </div>
+        </section>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-brand-col">
+                    <img src="./assets/Stackly-logo-Blue.webp" alt="Logo" class="logo">
+                    <p class="footer-bio">
+                        Connecting top talent with industry-leading companies. Build your career, or build your team,
+                        all in one seamless platform.
+                    </p>
+                    <div class="social-links">
+                        <a href="404page.html" aria-label="LinkedIn" class="social-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="404page.html" aria-label="Twitter" class="social-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="404page.html" aria-label="GitHub" class="social-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs-listing.html">Find Jobs</a></li>
+                        <li><a href="Company-listing.html">Companies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-title">For Candidates</h4>
+                    <ul class="footer-list">
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="404page.html">Browse Categories</a></li>
+                        <li><a href="404page.html">Candidate Dashboard</a></li>
+                        <li><a href="404page.html">Job Alerts</a></li>
+                        <li><a href="404page.html">Saved Jobs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 class="footer-title">For Employers</h4>
+                    <ul class="footer-list">
+                        <li><a href="404page.html">Post a Job</a></li>
+                        <li><a href="404page.html">Employer Dashboard</a></li>
+                        <li><a href="404page.html">Pricing & Plans</a></li>
+                        <li><a href="404page.html">Search Resumes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Stackly. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="404page.html">English (US)</a>
+                    <a href="404page.html">Help Center</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                if (validateForm()) {
+                    const submitBtn = form.querySelector('.btn-submit');
+                    const originalText = submitBtn.innerHTML;
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                    submitBtn.disabled = true;
+
+                    setTimeout(() => {
+                        window.location.href = '404page.html';
+                    }, 1500);
+                }
+            });
+
+            function validateForm() {
+                let isValid = true;
+                document.querySelectorAll('.error-message').forEach(el => {
+                    el.textContent = '';
+                });
+                document.querySelectorAll('.form-group').forEach(el => {
+                    el.classList.remove('has-error');
+                });
+
+                const firstName = document.getElementById('firstName');
+                if (!firstName.value.trim()) {
+                    showError(firstName, 'firstNameError', 'First name is required');
+                    isValid = false;
+                }
+
+                const lastName = document.getElementById('lastName');
+                if (!lastName.value.trim()) {
+                    showError(lastName, 'lastNameError', 'Last name is required');
+                    isValid = false;
+                }
+
+                const email = document.getElementById('email');
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email.value.trim()) {
+                    showError(email, 'emailError', 'Email is required');
+                    isValid = false;
+                } else if (!emailRegex.test(email.value)) {
+                    showError(email, 'emailError', 'Please enter a valid email address');
+                    isValid = false;
+                }
+
+                const subject = document.getElementById('subject');
+                if (!subject.value) {
+                    showError(subject, 'subjectError', 'Please select a subject');
+                    isValid = false;
+                }
+
+                const message = document.getElementById('message');
+                if (!message.value.trim()) {
+                    showError(message, 'messageError', 'Message is required');
+                    isValid = false;
+                } else if (message.value.trim().length < 10) {
+                    showError(message, 'messageError', 'Message must be at least 10 characters');
+                    isValid = false;
+                }
+
+                return isValid;
+            }
+
+            function showError(input, errorId, message) {
+                const errorEl = document.getElementById(errorId);
+                const formGroup = input.closest('.form-group');
+
+                if (errorEl) {
+                    errorEl.textContent = message;
+                }
+                if (formGroup) {
+                    formGroup.classList.add('has-error');
+                }
+            }
+
+            document.getElementById('firstName').addEventListener('blur', function () {
+                if (this.value.trim()) {
+                    clearError(this);
+                }
+            });
+
+            document.getElementById('lastName').addEventListener('blur', function () {
+                if (this.value.trim()) {
+                    clearError(this);
+                }
+            });
+
+            document.getElementById('email').addEventListener('blur', function () {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (this.value.trim() && emailRegex.test(this.value)) {
+                    clearError(this);
+                }
+            });
+
+            document.getElementById('subject').addEventListener('change', function () {
+                if (this.value) {
+                    clearError(this);
+                }
+            });
+
+            document.getElementById('message').addEventListener('blur', function () {
+                if (this.value.trim().length >= 10) {
+                    clearError(this);
+                }
+            });
+
+            function clearError(input) {
+                const formGroup = input.closest('.form-group');
+                const errorEl = formGroup.querySelector('.error-message');
+                if (errorEl) {
+                    errorEl.textContent = '';
+                }
+                formGroup.classList.remove('has-error');
+            }
+        });
+
+        function resetForm() {
+            const form = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+
+            form.reset();
+            form.style.display = 'block';
+            successMessage.style.display = 'none';
+
+            const submitBtn = form.querySelector('.btn-submit');
+            submitBtn.innerHTML = '<span>Send Message</span><i class="fas fa-paper-plane"></i>';
+            submitBtn.disabled = false;
+        }
+
+        function openChat() {
+            window.location.href = '404page.html';
+        }
+    </script>
+</body>
+
+</html>

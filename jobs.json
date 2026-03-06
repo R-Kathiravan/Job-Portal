@@ -1,0 +1,1555 @@
+[
+  {
+    "id": 101,
+    "title": "Senior Frontend Developer",
+    "company": "Google",
+    "location": "Mountain View, CA",
+    "salary": "$120k - $150k / yr",
+    "type": "Full-Time",
+    "workModel": "Hybrid",
+    "experience": "Senior",
+    "logo": "./assets/google.webp",
+    "description": "We are looking for an experienced developer to join our core UI team. You will be responsible for building responsive, accessible web interfaces.",
+    "responsibilities": [
+      "Design and implement user-facing features using React and TypeScript",
+      "Collaborate with designers to translate Figma mockups into pixel-perfect UI",
+      "Optimize application performance for maximum speed and scalability",
+      "Participate in code reviews and mentor junior developers",
+      "Contribute to technical documentation and best practices"
+    ],
+    "requirements": [
+      "5+ years experience with JavaScript frameworks",
+      "Strong CSS and responsive design knowledge",
+      "Experience with modern build tools (Webpack, Vite)",
+      "Strong problem-solving and communication skills"
+    ],
+    "benefits": [
+      "Competitive salary and equity package",
+      "Health, dental, and vision insurance",
+      "401(k) retirement plan with company match",
+      "Unlimited PTO and flexible work arrangements",
+      "Professional development budget and learning opportunities",
+      "Free meals and on-site wellness facilities"
+    ],
+    "skills": [
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "React",
+      "TypeScript"
+    ],
+    "posted": 2
+  },
+  {
+    "id": 102,
+    "title": "Junior Frontend Developer",
+    "company": "Google",
+    "location": "Remote",
+    "salary": "$70k - $90k / yr",
+    "type": "Full-Time",
+    "workModel": "Remote",
+    "experience": "Entry Level",
+    "logo": "./assets/google.webp",
+    "description": "Join our team as a Junior Frontend Developer and learn from industry experts while building amazing web experiences.",
+    "responsibilities": [
+      "Develop and maintain web applications using React",
+      "Collaborate with senior developers on code reviews",
+      "Participate in team meetings and stand-ups",
+      "Learn and apply best practices for web development",
+      "Fix bugs and implement small features"
+    ],
+    "requirements": [
+      "1-2 years experience with JavaScript",
+      "Basic knowledge of HTML, CSS, and React",
+      "Understanding of version control (Git)",
+      "Strong willingness to learn"
+    ],
+    "benefits": [
+      "Competitive salary",
+      "Health and dental insurance",
+      "Mentorship program",
+      "Flexible work hours",
+      "Learning and development budget",
+      "Remote work options"
+    ],
+    "skills": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "React",
+      "Git"
+    ],
+    "posted": 1
+  },
+  {
+    "id": 103,
+    "title": "Frontend Developer (Part-Time)",
+    "company": "Google",
+    "location": "Mountain View, CA",
+    "salary": "$40k - $55k / yr",
+    "type": "Part-Time",
+    "workModel": "On-Site",
+    "experience": "Mid-Level",
+    "logo": "./assets/google.webp",
+    "description": "We're looking for a part-time Frontend Developer to help build and maintain our internal tools.",
+    "responsibilities": [
+      "Build user interfaces for internal tools",
+      "Collaborate with product designers",
+      "Write clean, maintainable code",
+      "Participate in code reviews"
+    ],
+    "requirements": [
+      "2+ years of frontend development experience",
+      "Proficiency in React and TypeScript",
+      "Experience with CSS frameworks"
+    ],
+    "benefits": [
+      "Flexible schedule",
+      "Health insurance",
+      "Employee discount",
+      "Free snacks and drinks"
+    ],
+    "skills": [
+      "React",
+      "TypeScript",
+      "CSS",
+      "HTML"
+    ],
+    "posted": 5
+  },
+  {
+    "id": 104,
+    "title": "Frontend Developer Contract",
+    "company": "Google",
+    "location": "Remote",
+    "salary": "$60 - $80 / hr",
+    "type": "Contract",
+    "workModel": "Remote",
+    "experience": "Mid-Level",
+    "logo": "./assets/google.webp",
+    "description": "6-month contract opportunity for an experienced Frontend Developer to help with a major product launch.",
+    "responsibilities": [
+      "Develop new features for our web platform",
+      "Work closely with UX designers",
+      "Ensure responsive design across devices",
+      "Write unit and integration tests"
+    ],
+    "requirements": [
+      "3+ years frontend development experience",
+      "Expert in React and modern JavaScript",
+      "Experience with testing frameworks",
+      "Available for 6-month commitment"
+    ],
+    "benefits": [
+      "Competitive hourly rate",
+      "Remote work",
+      "Flexible hours",
+      "Potential for extension"
+    ],
+    "skills": [
+      "React",
+      "JavaScript",
+      "CSS",
+      "Jest",
+      "Testing Library"
+    ],
+    "posted": 3
+  },
+  {
+    "id": 105,
+    "title": "Senior Backend Engineer",
+    "company": "Amazon",
+    "location": "Seattle, WA",
+    "salary": "$150k - $185k / yr",
+    "type": "Full-Time",
+    "workModel": "Hybrid",
+    "experience": "Senior",
+    "logo": "./assets/logo-amazon.webp",
+    "description": "Join our cloud infrastructure team to build scalable backend services supporting millions of users.",
+    "responsibilities": [
+      "Design and implement scalable microservices architecture",
+      "Build and maintain RESTful APIs for internal and external consumers",
+      "Optimize database queries and ensure data integrity",
+      "Implement caching strategies and performance monitoring",
+      "Collaborate with cross-functional teams on system design"
+    ],
+    "requirements": [
+      "5+ years of backend development experience",
+      "Strong knowledge of databases and system design",
+      "Experience with AWS cloud services",
+      "Proficiency in Node.js, Python, or Java"
+    ],
+    "benefits": [
+      "Competitive base salary with stock options",
+      "Comprehensive health insurance",
+      "Relocation assistance",
+      "Employee discount on Amazon products",
+      "Career development programs",
+      "Parental leave and family benefits"
+    ],
+    "skills": [
+      "Node.js",
+      "Python",
+      "AWS",
+      "SQL",
+      "Microservices",
+      "Docker"
+    ],
+    "posted": 2
+  },
+  {
+    "id": 106,
+    "title": "Backend Developer (Entry Level)",
+    "company": "Amazon",
+    "location": "Austin, TX",
+    "salary": "$75k - $95k / yr",
+    "type": "Full-Time",
+    "workModel": "On-Site",
+    "experience": "Entry Level",
+    "logo": "./assets/logo-amazon.webp",
+    "description": "Start your career at Amazon as an Entry Level Backend Developer and build the future of e-commerce.",
+    "responsibilities": [
+      "Develop and maintain backend services",
+      "Write clean, efficient code",
+      "Participate in code reviews",
+      "Learn Amazon's proprietary technologies",
+      "Collaborate with team members"
+    ],
+    "requirements": [
+      "Bachelor's degree in CS or related field",
+      "Basic knowledge of at least one programming language",
+      "Understanding of data structures and algorithms",
+      "Strong problem-solving skills"
+    ],
+    "benefits": [
+      "Competitive salary",
+      "Full benefits package",
+      "Stock options",
+      "Career growth opportunities",
+      "Amazon Prime membership",
+      "Tuition reimbursement"
+    ],
+    "skills": [
+      "Java",
+      "Python",
+      "SQL",
+      "Git"
+    ],
+    "posted": 7
+  },
+  {
+    "id": 107,
+    "title": "Cloud Solutions Architect (Contract)",
+    "company": "Amazon",
+    "location": "Remote",
+    "salary": "$100 - $130 / hr",
+    "type": "Contract",
+    "workModel": "Remote",
+    "experience": "Senior",
+    "logo": "./assets/logo-amazon.webp",
+    "description": "Help enterprise customers migrate to AWS cloud infrastructure as a Solutions Architect.",
+    "responsibilities": [
+      "Design cloud migration strategies",
+      "Lead customer workshops and training",
+      "Provide technical guidance on AWS services",
+      "Create solution architectures"
+    ],
+    "requirements": [
+      "7+ years IT experience",
+      "AWS Solutions Architect certification",
+      "Strong communication skills",
+      "Experience with enterprise migrations"
+    ],
+    "benefits": [
+      "Competitive hourly rate",
+      "Fully remote",
+      "Flexible schedule",
+      "Travel opportunities"
+    ],
+    "skills": [
+      "AWS",
+      "Cloud Architecture",
+      "Kubernetes",
+      "Terraform"
+    ],
+    "posted": 4
+  },
+  {
+    "id": 108,
+    "title": "Night Shift Support Engineer",
+    "company": "Amazon",
+    "location": "Seattle, WA",
+    "salary": "$55k - $70k / yr",
+    "type": "Part-Time",
+    "workModel": "On-Site",
+    "experience": "Entry Level",
+    "logo": "./assets/logo-amazon.webp",
+    "description": "Join our night shift support team to monitor and maintain critical infrastructure.",
+    "responsibilities": [
+      "Monitor system health and performance",
+      "Respond to alerts and incidents",
+      "Document issues and resolutions",
+      "Escalate complex problems to on-call teams"
+    ],
+    "requirements": [
+      "Basic IT knowledge",
+      "Ability to work night shifts",
+      "Problem-solving skills",
+      "Strong communication"
+    ],
+    "benefits": [
+      "Night shift differential pay",
+      "Flexible schedule",
+      "Health benefits",
+      "Career development"
+    ],
+    "skills": [
+      "Linux",
+      "Networking",
+      "Monitoring Tools",
+      "SQL"
+    ],
+    "posted": 10
+  },
+  {
+    "id": 109,
+    "title": "Principal Product Designer",
+    "company": "Microsoft",
+    "location": "Redmond, WA",
+    "salary": "$180k - $220k / yr",
+    "type": "Full-Time",
+    "workModel": "Hybrid",
+    "experience": "Executive",
+    "logo": "./assets/logo-microsoft.webp",
+    "description": "Lead design strategy for Microsoft's flagship products and shape the future of productivity software.",
+    "responsibilities": [
+      "Define product design vision and strategy",
+      "Lead and mentor design teams",
+      "Present to executive leadership",
+      "Drive innovation in product UX",
+      "Establish design systems and standards"
+    ],
+    "requirements": [
+      "10+ years of product design experience",
+      "Proven track record of successful product launches",
+      "Strong leadership and communication skills",
+      "Experience with enterprise software"
+    ],
+    "benefits": [
+      "Industry-leading compensation",
+      "Stock options",
+      "Comprehensive health benefits",
+      "401(k) matching",
+      "Unlimited PTO",
+      "Professional development"
+    ],
+    "skills": [
+      "Design Strategy",
+      "Figma",
+      "User Research",
+      "Leadership",
+      "UX Design"
+    ],
+    "posted": 1
+  },
+  {
+    "id": 110,
+    "title": "UX Designer (Freelance)",
+    "company": "Microsoft",
+    "location": "Remote",
+    "salary": "$70 - $90 / hr",
+    "type": "Freelance",
+    "workModel": "Remote",
+    "experience": "Mid-Level",
+    "logo": "./assets/logo-microsoft.webp",
+    "description": "Create beautiful and intuitive user experiences for Microsoft's productivity suite on a freelance basis.",
+    "responsibilities": [
+      "Design user interfaces for new features",
+      "Create wireframes and prototypes",
+      "Conduct usability testing",
+      "Collaborate with product managers and engineers"
+    ],
+    "requirements": [
+      "3+ years UX design experience",
+      "Proficiency in Figma and Adobe CC",
+      "Strong portfolio showcasing web and mobile work",
+      "Excellent communication skills"
+    ],
+    "benefits": [
+      "Competitive hourly rate",
+      "Work from anywhere",
+      "Flexible hours",
+      "Potential for long-term collaboration"
+    ],
+    "skills": [
+      "Figma",
+      "Adobe XD",
+      "Wireframing",
+      "Prototyping",
+      "User Research"
+    ],
+    "posted": 6
+  },
+  {
+    "id": 111,
+    "title": "Junior UX Researcher",
+    "company": "Microsoft",
+    "location": "Remote",
+    "salary": "$60k - $80k / yr",
+    "type": "Full-Time",
+    "workModel": "Remote",
+    "experience": "Entry Level",
+    "logo": "./assets/logo-microsoft.webp",
+    "description": "Start your UX career at Microsoft conducting research to understand user needs and behaviors.",
+    "responsibilities": [
+      "Conduct user interviews and surveys",
+      "Analyze research data",
+      "Create research reports",
+      "Present findings to product teams",
+      "Assist senior researchers with studies"
+    ],
+    "requirements": [
+      "Bachelor's degree in HCI, Psychology, or related field",
+      "Basic knowledge of user research methods",
+      "Strong analytical skills",
+      "Excellent written and verbal communication"
+    ],
+    "benefits": [
+      "Competitive salary",
+      "Remote work",
+      "Health and dental insurance",
+      "401(k) matching",
+      "Learning opportunities",
+      "Microsoft software discounts"
+    ],
+    "skills": [
+      "User Research",
+      "Data Analysis",
+      "Survey Design",
+      "Presentation"
+    ],
+    "posted": 8
+  },
+  {
+    "id": 112,
+    "title": "Data Science Manager",
+    "company": "Meta",
+    "location": "Menlo Park, CA",
+    "salary": "$200k - $250k / yr",
+    "type": "Full-Time",
+    "workModel": "On-Site",
+    "experience": "Executive",
+    "logo": "./assets/logo-meta.webp",
+    "description": "Lead a team of data scientists to derive insights from Meta's massive data ecosystem.",
+    "responsibilities": [
+      "Manage and grow a team of data scientists",
+      "Drive data-driven decision making across products",
+      "Develop statistical models and algorithms",
+      "Present insights to leadership",
+      "Collaborate with engineering and product teams"
+    ],
+    "requirements": [
+      "7+ years of data science experience",
+      "3+ years of management experience",
+      "PhD or Master's in Statistics, Math, or related field",
+      "Experience with large-scale data systems",
+      "Strong Python/R and SQL skills"
+    ],
+    "benefits": [
+      "Top-tier compensation",
+      "Equity package",
+      "Comprehensive health coverage",
+      "Free meals and transportation",
+      "Wellness programs",
+      "Sabbatical program"
+    ],
+    "skills": [
+      "Python",
+      "R",
+      "SQL",
+      "Machine Learning",
+      "Leadership",
+      "Statistics"
+    ],
+    "posted": 3
+  },
+  {
+    "id": 113,
+    "title": "Data Analyst (Part-Time)",
+    "company": "Meta",
+    "location": "Remote",
+    "salary": "$45k - $60k / yr",
+    "type": "Part-Time",
+    "workModel": "Remote",
+    "experience": "Mid-Level",
+    "logo": "./assets/logo-meta.webp",
+    "description": "Join Meta's analytics team on a part-time basis to help drive data-informed decisions.",
+    "responsibilities": [
+      "Analyze user behavior data",
+      "Create dashboards and reports",
+      "Support product teams with insights",
+      "Collaborate with engineering on data pipelines"
+    ],
+    "requirements": [
+      "2+ years of analytics experience",
+      "Strong SQL and Excel skills",
+      "Experience with visualization tools",
+      "Basic Python or R knowledge"
+    ],
+    "benefits": [
+      "Flexible schedule",
+      "Remote work",
+      "Health insurance",
+      "Stock options"
+    ],
+    "skills": [
+      "SQL",
+      "Excel",
+      "Tableau",
+      "Python",
+      "Data Analysis"
+    ],
+    "posted": 12
+  },
+  {
+    "id": 114,
+    "title": "Machine Learning Intern",
+    "company": "Meta",
+    "location": "Menlo Park, CA",
+    "salary": "$8k - $10k / mo",
+    "type": "Contract",
+    "workModel": "On-Site",
+    "experience": "Entry Level",
+    "logo": "./assets/logo-meta.webp",
+    "description": "Summer internship opportunity to work on cutting-edge machine learning problems at Meta.",
+    "responsibilities": [
+      "Research and develop ML models",
+      "Work on real production systems",
+      "Present findings to the team",
+      "Collaborate with research scientists"
+    ],
+    "requirements": [
+      "Currently pursuing PhD or Master's in CS/ML",
+      "Strong background in deep learning",
+      "Python and PyTorch/TensorFlow experience",
+      "Research publications preferred"
+    ],
+    "benefits": [
+      "Competitive stipend",
+      "Housing assistance",
+      "Networking events",
+      "Free meals",
+      "Potential full-time conversion"
+    ],
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Deep Learning",
+      "Research"
+    ],
+    "posted": 15
+  },
+  {
+    "id": 115,
+    "title": "VR Game Developer",
+    "company": "Meta",
+    "location": "Austin, TX",
+    "salary": "$90k - $120k / yr",
+    "type": "Full-Time",
+    "workModel": "Hybrid",
+    "experience": "Mid-Level",
+    "logo": "./assets/logo-meta.webp",
+    "description": "Build immersive VR gaming experiences for Meta's Quest platform.",
+    "responsibilities": [
+      "Develop VR games using Unity or Unreal Engine",
+      "Optimize performance for standalone VR",
+      "Design intuitive VR interactions",
+      "Work with art and design teams"
+    ],
+    "requirements": [
+      "3+ years game development experience",
+      "Experience with Unity or Unreal Engine",
+      "Understanding of VR design principles",
+      "Strong C# or C++ skills"
+    ],
+    "benefits": [
+      "Competitive salary",
+      "Equity package",
+      "VR equipment provided",
+      "Health benefits",
+      "Flexible work arrangements"
+    ],
+    "skills": [
+      "Unity",
+      "C#",
+      "VR Development",
+      "Game Design",
+      "3D Graphics"
+    ],
+    "posted": 5
+  },
+  {
+    "id": 116,
+    "title": "iOS Engineer",
+    "company": "Apple",
+    "location": "Cupertino, CA",
+    "salary": "$140k - $175k / yr",
+    "type": "Full-Time",
+    "workModel": "On-Site",
+    "experience": "Senior",
+    "logo": "./assets/logo-apple.webp",
+    "description": "Build the next generation of iOS applications that will be used by millions worldwide.",
+    "responsibilities": [
+      "Design and build iOS applications",
+      "Optimize app performance and battery life",
+      "Collaborate with design team",
+      "Mentor junior engineers",
+      "Participate in code reviews"
+    ],
+    "requirements": [
+      "5+ years iOS development experience",
+      "Expert in Swift and UIKit",
+      "Experience with App Store submissions",
+      "Strong understanding of iOS ecosystem"
+    ],
+    "benefits": [
+      "Industry-leading compensation",
+      "Equity package",
+      "Comprehensive health coverage",
+      "Employee discount program",
+      "Wellness and fitness center",
+      "Education reimbursement"
+    ],
+    "skills": [
+      "Swift",
+      "UIKit",
+      "SwiftUI",
+      "iOS",
+      "Xcode"
+    ],
+    "posted": 2
+  },
+  {
+    "id": 117,
+    "title": "Android Developer (Freelance)",
+    "company": "Apple",
+    "location": "Remote",
+    "salary": "$80 - $110 / hr",
+    "type": "Freelance",
+    "workModel": "Remote",
+    "experience": "Mid-Level",
+    "logo": "./assets/logo-apple.webp",
+    "description": "Help develop and maintain Apple's Android applications on a freelance basis.",
+    "responsibilities": [
+      "Build new features for Apple Music, TV+ apps",
+      "Fix bugs and improve performance",
+      "Ensure app compatibility",
+      "Write clean, testable code"
+    ],
+    "requirements": [
+      "3+ years Android development",
+      "Strong Kotlin and Java skills",
+      "Experience with Android Jetpack",
+      "Understanding of material design"
+    ],
+    "benefits": [
+      "Competitive hourly rate",
+      "Fully remote",
+      "Flexible schedule",
+      "Potential for long-term work"
+    ],
+    "skills": [
+      "Kotlin",
+      "Java",
+      "Android SDK",
+      "Jetpack Compose",
+      "REST APIs"
+    ],
+    "posted": 9
+  },
+  {
+    "id": 118,
+    "title": "Mobile QA Tester",
+    "company": "Apple",
+    "location": "San Diego, CA",
+    "salary": "$65k - $85k / yr",
+    "type": "Part-Time",
+    "workModel": "Hybrid",
+    "experience": "Entry Level",
+    "logo": "./assets/logo-apple.webp",
+    "description": "Join Apple's quality assurance team to ensure our mobile apps meet the highest standards.",
+    "responsibilities": [
+      "Test iOS and Android applications",
+      "Identify and document bugs",
+      "Perform regression testing",
+      "Create test cases and plans"
+    ],
+    "requirements": [
+      "1+ years QA experience",
+      "Understanding of mobile platforms",
+      "Strong attention to detail",
+      "Good communication skills"
+    ],
+    "benefits": [
+      "Flexible hours",
+      "Health benefits",
+      "Apple product discounts",
+      "Career growth opportunities"
+    ],
+    "skills": [
+      "QA Testing",
+      "Bug Tracking",
+      "Mobile Testing",
+      "Jira"
+    ],
+    "posted": 14
+  },
+  {
+    "id": 119,
+    "title": "Embedded Systems Engineer",
+    "company": "Apple",
+    "location": "Cupertino, CA",
+    "salary": "$130k - $160k / yr",
+    "type": "Full-Time",
+    "workModel": "On-Site",
+    "experience": "Senior",
+    "logo": "./assets/logo-apple.webp",
+    "description": "Work on cutting-edge embedded systems for Apple's hardware products.",
+    "responsibilities": [
+      "Design and develop embedded software",
+      "Work with hardware teams",
+      "Optimize firmware performance",
+      "Debug complex issues"
+    ],
+    "requirements": [
+      "5+ years embedded development",
+      "Strong C/C++ skills",
+      "Experience with RTOS",
+      "Hardware-software integration experience"
+    ],
+    "benefits": [
+      "Top compensation",
+      "Stock options",
+      "Health benefits",
+      "Free products",
+      "Wellness programs"
+    ],
+    "skills": [
+      "C",
+      "C++",
+      "Embedded Systems",
+      "RTOS",
+      "Hardware Integration"
+    ],
+    "posted": 6
+  },
+  {
+    "id": 120,
+    "title": "Senior DevOps Engineer",
+    "company": "Netflix",
+    "location": "Los Gatos, CA",
+    "salary": "$170k - $210k / yr",
+    "type": "Full-Time",
+    "workModel": "Remote",
+    "experience": "Senior",
+    "logo": "./assets/logo-netfilx.webp",
+    "description": "Join Netflix's platform engineering team to build and maintain infrastructure that streams content to 200M+ subscribers.",
+    "responsibilities": [
+      "Design and maintain CI/CD pipelines",
+      "Manage Kubernetes clusters at scale",
+      "Implement infrastructure as code with Terraform",
+      "Monitor system health and respond to incidents",
+      "Automate manual processes"
+    ],
+    "requirements": [
+      "6+ years DevOps experience",
+      "Expert in Kubernetes and Docker",
+      "Strong scripting skills (Bash, Python)",
+      "Experience with cloud infrastructure (AWS/GCP)"
+    ],
+    "benefits": [
+      "Top-tier compensation",
+      "Unlimited PTO policy",
+      "Health and dental coverage",
+      "Stock options",
+      "Parental leave",
+      "Learning and development budget"
+    ],
+    "skills": [
+      "Kubernetes",
+      "Docker",
+      "AWS",
+      "Terraform",
+      "Python",
+      "Linux"
+    ],
+    "posted": 1
+  },
+  {
+    "id": 121,
+    "title": "Site Reliability Engineer (Mid-Level)",
+    "company": "Netflix",
+    "location": "Remote",
+    "salary": "$100k - $130k / yr",
+    "type": "Full-Time",
+    "workModel": "Remote",
+    "experience": "Mid-Level",
+    "logo": "./assets/logo-netfilx.webp",
+    "description": "Help Netflix maintain 99.99% uptime by monitoring systems and improving reliability.",
+    "responsibilities": [
+      "Monitor production systems",
+      "Respond to incidents quickly",
+      "Improve monitoring and alerting",
+      "Participate in on-call rotation",
+      "Document processes and runbooks"
+    ],
+    "requirements": [
+      "3+ years SRE or systems engineering",
+      "Strong Linux skills",
+      "Experience with monitoring tools",
+      "Programming/scripting skills"
+    ],
+    "benefits": [
+      "Competitive salary",
+      "Fully remote",
+      "Unlimited PTO",
+      "Stock options",
+      "Health benefits"
+    ],
+    "skills": [
+      "Linux",
+      "Monitoring",
+      "Python",
+      "Incident Response",
+      "AWS"
+    ],
+    "posted": 8
+  },
+  {
+    "id": 122,
+    "title": "Content Security Analyst (Contract)",
+    "company": "Netflix",
+    "location": "Los Angeles, CA",
+    "salary": "$35 - $45 / hr",
+    "type": "Contract",
+    "workModel": "Hybrid",
+    "experience": "Entry Level",
+    "logo": "./assets/logo-netfilx.webp",
+    "description": "Help protect Netflix content by monitoring and analyzing content security issues.",
+    "responsibilities": [
+      "Monitor content protection systems",
+      "Analyze piracy and security threats",
+      "Work with legal and technical teams",
+      "Create reports and documentation"
+    ],
+    "requirements": [
+      "Basic understanding of content security",
+      "Strong analytical skills",
+      "Good written communication",
+      "Attention to detail"
+    ],
+    "benefits": [
+      "Competitive hourly rate",
+      "Flexible schedule",
+      "Hollywood studio access",
+      "Potential extension"
+    ],
+    "skills": [
+      "Content Security",
+      "Analysis",
+      "Reporting",
+      "Communication"
+    ],
+    "posted": 20
+  },
+  {
+    "id": 123,
+    "title": "Data Engineer",
+    "company": "Netflix",
+    "location": "Remote",
+    "salary": "$110k - $140k / yr",
+    "type": "Full-Time",
+    "workModel": "Remote",
+    "experience": "Mid-Level",
+    "logo": "./assets/logo-netfilx.webp",
+    "description": "Build data pipelines to power Netflix's recommendation engine and analytics platforms.",
+    "responsibilities": [
+      "Design and build data pipelines",
+      "Work with Spark and Kafka",
+      "Optimize data processing",
+      "Collaborate with ML engineers"
+    ],
+    "requirements": [
+      "3+ years data engineering experience",
+      "Strong Python and SQL skills",
+      "Experience with Spark and Kafka",
+      "Knowledge of cloud platforms"
+    ],
+    "benefits": [
+      "Competitive salary",
+      "Remote work",
+      "Stock options",
+      "Unlimited PTO",
+      "Health benefits"
+    ],
+    "skills": [
+      "Python",
+      "Spark",
+      "Kafka",
+      "AWS",
+      "SQL",
+      "Data Pipelines"
+    ],
+    "posted": 4
+  },
+  {
+    "id": 124,
+    "title": "Cybersecurity Analyst",
+    "company": "IBM",
+    "location": "Austin, TX",
+    "salary": "$90k - $115k / yr",
+    "type": "Full-Time",
+    "workModel": "Hybrid",
+    "experience": "Mid-Level",
+    "logo": "./assets/logo-ibm.webp",
+    "description": "Join IBM's security operations center to protect our clients from cyber threats.",
+    "responsibilities": [
+      "Monitor security systems and respond to threats",
+      "Conduct vulnerability assessments",
+      "Implement security policies",
+      "Investigate security incidents"
+    ],
+    "requirements": [
+      "3+ years cybersecurity experience",
+      "Knowledge of security frameworks",
+      "Experience with SIEM tools",
+      "Security certifications preferred"
+    ],
+    "benefits": [
+      "Competitive salary",
+      "Health and wellness benefits",
+      "Retirement savings plan",
+      "Professional certification support",
+      "Global career opportunities"
+    ],
+    "skills": [
+      "SIEM",
+      "Network Security",
+      "Vulnerability Assessment",
+      "Incident Response"
+    ],
+    "posted": 5
+  },
+  {
+    "id": 125,
+    "title": "Security Consultant (Freelance)",
+    "company": "IBM",
+    "location": "Remote",
+    "salary": "$100 - $150 / hr",
+    "type": "Freelance",
+    "workModel": "Remote",
+    "experience": "Senior",
+    "logo": "./assets/logo-ibm.webp",
+    "description": "Provide expert security consulting services to IBM enterprise clients.",
+    "responsibilities": [
+      "Conduct security assessments",
+      "Develop security strategies",
+      "Provide client recommendations",
+      "Lead security workshops"
+    ],
+    "requirements": [
+      "8+ years security experience",
+      "CISSP or CISM certification",
+      "Strong client communication skills",
+      "Experience with enterprise security"
+    ],
+    "benefits": [
+      "High hourly rate",
+      "Work from anywhere",
+      "Flexible schedule",
+      "Varied projects"
+    ],
+    "skills": [
+      "Security Consulting",
+      "Risk Assessment",
+      "Compliance",
+      "Client Relations"
+    ],
+    "posted": 11
+  },
+  {
+    "id": 126,
+    "title": "Penetration Tester (Part-Time)",
+    "company": "IBM",
+    "location": "New York, NY",
+    "salary": "$60k - $80k / yr",
+    "type": "Part-Time",
+    "workModel": "Hybrid",
+    "experience": "Mid-Level",
+    "logo": "./assets/logo-ibm.webp",
+    "description": "Help identify vulnerabilities in client systems through ethical hacking.",
+    "responsibilities": [
+      "Conduct penetration testing",
+      "Identify security vulnerabilities",
+      "Document findings and recommendations",
+      "Present results to clients"
+    ],
+    "requirements": [
+      "2+ years penetration testing experience",
+      "OSCP or similar certification",
+      "Strong technical skills",
+      "Good documentation skills"
+    ],
+    "benefits": [
+      "Flexible hours",
+      "Training budget",
+      "Health benefits",
+      "Certifications support"
+    ],
+    "skills": [
+      "Penetration Testing",
+      "Ethical Hacking",
+      "Python",
+      "Metasploit"
+    ],
+    "posted": 7
+  },
+  {
+    "id": 127,
+    "title": "Cloud Security Architect",
+    "company": "IBM",
+    "location": "San Francisco, CA",
+    "salary": "$160k - $200k / yr",
+    "type": "Full-Time",
+    "workModel": "Hybrid",
+    "experience": "Senior",
+    "logo": "./assets/logo-ibm.webp",
+    "description": "Design secure cloud architectures for enterprise clients migrating to the cloud.",
+    "responsibilities": [
+      "Design cloud security architecture",
+      "Conduct risk assessments",
+      "Develop security policies for cloud",
+      "Lead security transformations"
+    ],
+    "requirements": [
+      "7+ years security experience",
+      "Cloud security certifications (AWS, Azure, GCP)",
+      "Strong technical background",
+      "Experience with enterprise clients"
+    ],
+    "benefits": [
+      "Top-tier compensation",
+      "Stock options",
+      "Health benefits",
+      "Professional development",
+      "Travel opportunities"
+    ],
+    "skills": [
+      "Cloud Security",
+      "AWS",
+      "Azure",
+      "GCP",
+      "Architecture",
+      "Risk Management"
+    ],
+    "posted": 3
+  },
+  {
+    "id": 128,
+    "title": "Software Engineering Intern",
+    "company": "Tesla",
+    "location": "Palo Alto, CA",
+    "salary": "$7k - $9k / mo",
+    "type": "Contract",
+    "workModel": "On-Site",
+    "experience": "Entry Level",
+    "logo": "./assets/logo-teala.webp",
+    "description": "Summer internship to work on Tesla's innovative products and software systems.",
+    "responsibilities": [
+      "Work on real software projects",
+      "Collaborate with experienced engineers",
+      "Present findings to the team",
+      "Learn Tesla's development process"
+    ],
+    "requirements": [
+      "Currently pursuing BS/MS in CS or related",
+      "Strong programming skills",
+      "Passion for sustainability",
+      "Problem-solving mindset"
+    ],
+    "benefits": [
+      "Competitive stipend",
+      "Housing stipend",
+      "Free Supercharging",
+      "Networking events",
+      "Full-time conversion potential"
+    ],
+    "skills": [
+      "Python",
+      "C++",
+      "Software Development",
+      "Problem Solving"
+    ],
+    "posted": 18
+  },
+  {
+    "id": 129,
+    "title": "Full-Stack Developer",
+    "company": "Tesla",
+    "location": "Austin, TX",
+    "salary": "$100k - $130k / yr",
+    "type": "Full-Time",
+    "workModel": "Hybrid",
+    "experience": "Mid-Level",
+    "logo": "./assets/logo-teala.webp",
+    "description": "Build web applications that power Tesla's manufacturing and customer experience.",
+    "responsibilities": [
+      "Develop full-stack applications",
+      "Work with React and Node.js",
+      "Optimize application performance",
+      "Collaborate with cross-functional teams"
+    ],
+    "requirements": [
+      "3+ years full-stack development",
+      "Experience with React and Node.js",
+      "Knowledge of databases",
+      "Agile methodology experience"
+    ],
+    "benefits": [
+      "Competitive salary",
+      "Equity package",
+      "Free EV charging",
+      "Health benefits",
+      "Career growth"
+    ],
+    "skills": [
+      "React",
+      "Node.js",
+      "TypeScript",
+      "PostgreSQL",
+      "AWS"
+    ],
+    "posted": 6
+  },
+  {
+    "id": 130,
+    "title": "Autonomous Driving Engineer",
+    "company": "Tesla",
+    "location": "Palo Alto, CA",
+    "salary": "$150k - $200k / yr",
+    "type": "Full-Time",
+    "workModel": "On-Site",
+    "experience": "Senior",
+    "logo": "./assets/logo-teala.webp",
+    "description": "Work on Tesla's Autopilot and Full Self-Driving technology to revolutionize transportation.",
+    "responsibilities": [
+      "Develop perception and planning algorithms",
+      "Work with computer vision models",
+      "Test and validate autonomous features",
+      "Collaborate with hardware teams"
+    ],
+    "requirements": [
+      "5+ years in autonomous systems",
+      "Strong C++ and Python skills",
+      "Experience with computer vision or ML",
+      "Understanding of robotics"
+    ],
+    "benefits": [
+      "Top compensation",
+      "Equity package",
+      "Free EV charging",
+      "Health benefits",
+      "Cutting-edge work"
+    ],
+    "skills": [
+      "C++",
+      "Python",
+      "Computer Vision",
+      "Machine Learning",
+      "Autonomous Systems"
+    ],
+    "posted": 2
+  },
+  {
+    "id": 131,
+    "title": "Technical Support Specialist",
+    "company": "Tesla",
+    "location": "Denver, CO",
+    "salary": "$55k - $70k / yr",
+    "type": "Part-Time",
+    "workModel": "Hybrid",
+    "experience": "Entry Level",
+    "logo": "./assets/logo-teala.webp",
+    "description": "Provide technical support to Tesla vehicle owners and help resolve issues.",
+    "responsibilities": [
+      "Respond to customer inquiries",
+      "Diagnose technical issues",
+      "Schedule service appointments",
+      "Document customer interactions"
+    ],
+    "requirements": [
+      "1+ years customer service",
+      "Technical aptitude",
+      "Strong communication skills",
+      "Passion for EVs"
+    ],
+    "benefits": [
+      "Flexible schedule",
+      "Employee vehicle program",
+      "Health benefits",
+      "Career advancement"
+    ],
+    "skills": [
+      "Customer Service",
+      "Technical Support",
+      "Communication",
+      "Problem Solving"
+    ],
+    "posted": 12
+  },
+  {
+    "id": 132,
+    "title": "Digital Marketing Manager",
+    "company": "HubSpot",
+    "location": "Boston, MA",
+    "salary": "$95k - $120k / yr",
+    "type": "Full-Time",
+    "workModel": "Hybrid",
+    "experience": "Mid-Level",
+    "logo": "./assets/logo-hubspot.webp",
+    "description": "Lead digital marketing campaigns to grow HubSpot's brand and customer base.",
+    "responsibilities": [
+      "Develop and execute marketing strategies",
+      "Manage SEO and content marketing",
+      "Analyze campaign performance",
+      "Collaborate with product teams"
+    ],
+    "requirements": [
+      "4+ years digital marketing experience",
+      "Experience with marketing tools",
+      "Strong analytical skills",
+      "Excellent copywriting"
+    ],
+    "benefits": [
+      "Remote work flexibility",
+      "Unlimited vacation",
+      "Health and dental insurance",
+      "Stock options",
+      "Professional development",
+      "Casual work environment"
+    ],
+    "skills": [
+      "SEO",
+      "Content Marketing",
+      "Analytics",
+      "HubSpot",
+      "Google Analytics"
+    ],
+    "posted": 4
+  },
+  {
+    "id": 133,
+    "title": "Content Writer (Freelance)",
+    "company": "HubSpot",
+    "location": "Remote",
+    "salary": "$50 - $75 / hr",
+    "type": "Freelance",
+    "workModel": "Remote",
+    "experience": "Mid-Level",
+    "logo": "./assets/logo-hubspot.webp",
+    "description": "Create compelling content for HubSpot's blog, marketing materials, and product documentation.",
+    "responsibilities": [
+      "Write blog posts and articles",
+      "Create marketing copy",
+      "Develop product documentation",
+      "Edit content from other writers"
+    ],
+    "requirements": [
+      "3+ years content writing experience",
+      "Strong portfolio of work",
+      "Understanding of inbound marketing",
+      "Excellent grammar and style"
+    ],
+    "benefits": [
+      "Competitive rate",
+      "Work from anywhere",
+      "Flexible deadlines",
+      "Potential for ongoing work"
+    ],
+    "skills": [
+      "Content Writing",
+      "Copywriting",
+      "SEO",
+      "Marketing",
+      "Editing"
+    ],
+    "posted": 9
+  },
+  {
+    "id": 134,
+    "title": "Sales Development Representative",
+    "company": "HubSpot",
+    "location": "Boston, MA",
+    "salary": "$55k - $70k / yr",
+    "type": "Full-Time",
+    "workModel": "On-Site",
+    "experience": "Entry Level",
+    "logo": "./assets/logo-hubspot.webp",
+    "description": "Drive growth by identifying and qualifying new business opportunities for HubSpot.",
+    "responsibilities": [
+      "Prospect and identify leads",
+      "Qualify potential customers",
+      "Schedule meetings for sales team",
+      "Handle inbound inquiries"
+    ],
+    "requirements": [
+      "0-2 years experience",
+      "Strong communication skills",
+      "Comfortable with cold outreach",
+      "Goal-oriented mindset"
+    ],
+    "benefits": [
+      "Base salary + commission",
+      "Health insurance",
+      "Unlimited vacation",
+      "Sales training program",
+      "Career growth path"
+    ],
+    "skills": [
+      "Sales",
+      "Communication",
+      "Prospecting",
+      "CRM"
+    ],
+    "posted": 15
+  },
+  {
+    "id": 135,
+    "title": "Customer Success Manager",
+    "company": "HubSpot",
+    "location": "Remote",
+    "salary": "$75k - $95k / yr",
+    "type": "Full-Time",
+    "workModel": "Remote",
+    "experience": "Mid-Level",
+    "logo": "./assets/logo-hubspot.webp",
+    "description": "Help HubSpot customers achieve their goals and maximize their investment in our platform.",
+    "responsibilities": [
+      "Onboard new customers",
+      "Provide training and support",
+      "Identify expansion opportunities",
+      "Maintain customer relationships"
+    ],
+    "requirements": [
+      "2+ years customer success experience",
+      "Experience with SaaS products",
+      "Strong presentation skills",
+      "Problem-solving abilities"
+    ],
+    "benefits": [
+      "Fully remote",
+      "Competitive salary",
+      "Stock options",
+      "Health benefits",
+      "Unlimited PTO"
+    ],
+    "skills": [
+      "Customer Success",
+      "SaaS",
+      "Presentation",
+      "Account Management"
+    ],
+    "posted": 7
+  },
+  {
+    "id": 136,
+    "title": "Product Manager",
+    "company": "Adobe",
+    "location": "San Jose, CA",
+    "salary": "$140k - $175k / yr",
+    "type": "Full-Time",
+    "workModel": "Hybrid",
+    "experience": "Senior",
+    "logo": "./assets/logo-agobe.webp",
+    "description": "Lead product strategy for Adobe's creative cloud products used by millions of designers.",
+    "responsibilities": [
+      "Define product roadmap and strategy",
+      "Work closely with engineering and design",
+      "Conduct market research",
+      "Launch new features",
+      "Analyze product metrics"
+    ],
+    "requirements": [
+      "5+ years product management",
+      "Experience with creative software",
+      "Strong analytical skills",
+      "Excellent communication"
+    ],
+    "benefits": [
+      "Competitive salary",
+      "Stock options",
+      "Creative Cloud subscription",
+      "Health benefits",
+      "Flexible work",
+      "Learning opportunities"
+    ],
+    "skills": [
+      "Product Management",
+      "Agile",
+      "Analytics",
+      "User Research"
+    ],
+    "posted": 3
+  },
+  {
+    "id": 137,
+    "title": "Video Editor (Contract)",
+    "company": "Adobe",
+    "location": "Remote",
+    "salary": "$60 - $80 / hr",
+    "type": "Contract",
+    "workModel": "Remote",
+    "experience": "Mid-Level",
+    "logo": "./assets/logo-agobe.webp",
+    "description": "Create promotional videos and tutorials for Adobe's marketing team.",
+    "responsibilities": [
+      "Edit marketing videos",
+      "Create tutorials for products",
+      "Work with motion graphics",
+      "Collaborate with creative team"
+    ],
+    "requirements": [
+      "3+ years video editing",
+      "Expert in Premiere Pro and After Effects",
+      "Strong portfolio",
+      "Creative mindset"
+    ],
+    "benefits": [
+      "Competitive rate",
+      "Remote work",
+      "Creative freedom",
+      "Potential extension"
+    ],
+    "skills": [
+      "Premiere Pro",
+      "After Effects",
+      "Motion Graphics",
+      "Video Production"
+    ],
+    "posted": 8
+  },
+  {
+    "id": 138,
+    "title": "UX Writer",
+    "company": "Adobe",
+    "location": "New York, NY",
+    "salary": "$85k - $110k / yr",
+    "type": "Full-Time",
+    "workModel": "Hybrid",
+    "experience": "Mid-Level",
+    "logo": "./assets/logo-agobe.webp",
+    "description": "Craft clear, concise user interface copy for Adobe's products.",
+    "responsibilities": [
+      "Write UI microcopy",
+      "Create onboarding content",
+      "Develop error messages",
+      "Maintain content style guides"
+    ],
+    "requirements": [
+      "3+ years UX writing",
+      "Portfolio of UX writing",
+      "Understanding of design systems",
+      "Collaboration skills"
+    ],
+    "benefits": [
+      "Competitive salary",
+      "Creative Cloud subscription",
+      "Health benefits",
+      "Flexible work",
+      "Career growth"
+    ],
+    "skills": [
+      "UX Writing",
+      "Content Strategy",
+      "Microcopy",
+      "Figma"
+    ],
+    "posted": 11
+  },
+  {
+    "id": 139,
+    "title": "Salesforce Administrator",
+    "company": "Salesforce",
+    "location": "San Francisco, CA",
+    "salary": "$90k - $115k / yr",
+    "type": "Full-Time",
+    "workModel": "Hybrid",
+    "experience": "Mid-Level",
+    "logo": "./assets/logo-salesforce.webp",
+    "description": "Administer and optimize Salesforce instance for our sales and marketing teams.",
+    "responsibilities": [
+      "Manage Salesforce configuration",
+      "Create reports and dashboards",
+      "Train users on Salesforce",
+      "Troubleshoot issues"
+    ],
+    "requirements": [
+      "3+ years Salesforce admin",
+      "Salesforce admin certification",
+      "Strong technical skills",
+      "Communication skills"
+    ],
+    "benefits": [
+      "Top employer benefits",
+      "Stock options",
+      "Health and wellness",
+      "Professional development",
+      "Volunteer time off"
+    ],
+    "skills": [
+      "Salesforce",
+      "CRM",
+      "Administration",
+      "Reporting"
+    ],
+    "posted": 5
+  },
+  {
+    "id": 140,
+    "title": "Solution Architect",
+    "company": "Salesforce",
+    "location": "Chicago, IL",
+    "salary": "$140k - $180k / yr",
+    "type": "Full-Time",
+    "workModel": "Remote",
+    "experience": "Senior",
+    "logo": "./assets/logo-salesforce.webp",
+    "description": "Design Salesforce solutions for enterprise customers across various industries.",
+    "responsibilities": [
+      "Design enterprise solutions",
+      "Lead implementation projects",
+      "Provide technical guidance",
+      "Present to stakeholders"
+    ],
+    "requirements": [
+      "6+ years Salesforce experience",
+      "Multiple Salesforce certifications",
+      "Enterprise implementation experience",
+      "Strong presentation skills"
+    ],
+    "benefits": [
+      "Top-tier compensation",
+      "Fully remote",
+      "Stock options",
+      "Unlimited PTO",
+      "Certification reimbursement"
+    ],
+    "skills": [
+      "Salesforce",
+      "Solution Architecture",
+      "APEX",
+      "Integrations"
+    ],
+    "posted": 2
+  }
+]

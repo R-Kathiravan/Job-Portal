@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details - Stackly Jobs</title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="job-desc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="head-cls">
+            <a href="index.html">
+                <img src="./assets/Stackly-logo-Blue.webp" alt="Stackly Logo" class="logo">
+            </a>
+            <nav class="menu-items" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="jobs-listing.html" class="active">Find Jobs</a>
+                <a href="Company-listing.html">Companies</a>
+                <a href="contact.html">Contact</a>
+                <div class="close-btn material-icons" id="closeMenu">close</div>
+                <div class="head-btns mob-view">
+                    <a href="login.html" class="btn btn-primary">Login</a>
+                    <a href="dashboard.html" class="btn btn-outline">Dashboard</a>
+                </div>
+            </nav>
+            <div class="head-btns">
+                <a href="login.html" class="btn btn-primary">Login</a>
+                <a href="dashboard.html" class="btn btn-outline">Dashboard</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="material-icons">menu</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="job-detail-main">
+        <div class="container">
+            <div class="job-detail-container">
+                <a href="index.html" class="back-link">
+                    <span class="material-icons">arrow_back</span>
+                    Back to Jobs
+                </a>
+
+                <div class="job-detail-header-card">
+                    <div class="header-top">
+                        <img id="detail-logo" src="" alt="Company Logo" class="company-logo-large">
+
+                        <div class="header-content">
+                            <h1 id="detail-title">Loading...</h1>
+                            <p class="company-name" id="detail-company"></p>
+
+                            <div class="job-meta-row">
+                                <span class="meta-item">
+                                    <span class="material-icons">location_on</span>
+                                    <span id="detail-location"></span>
+                                </span>
+                                <span class="meta-item">
+                                    <span class="material-icons">work</span>
+                                    <span id="detail-type" class="badge"></span>
+                                </span>
+                                <span class="meta-item">
+                                    <span class="material-icons">schedule</span>
+                                    <span id="detail-posted"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-bottom">
+                        <div class="salary-info">
+                            <span class="material-icons">payments</span>
+                            <div>
+                                <span class="salary-label">Salary Range</span>
+                                <span class="salary-value" id="detail-salary"></span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-apply-now" id="applyBtn">
+                            <span class="material-icons">send</span>
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="job-detail-content">
+                    <section class="content-section">
+                        <h3><span class="material-icons">description</span> About the Role</h3>
+                        <p id="detail-description"></p>
+                    </section>
+
+                    <section class="content-section">
+                        <h3><span class="material-icons">task_alt</span> Responsibilities</h3>
+                        <ul id="detail-responsibilities" class="responsibility-list"></ul>
+                    </section>
+
+                    <section class="content-section">
+                        <h3><span class="material-icons">verified</span> Requirements</h3>
+                        <ul id="detail-requirements" class="requirements-list"></ul>
+                    </section>
+
+                    <section class="content-section">
+                        <h3><span class="material-icons">psychology</span> Required Skills</h3>
+                        <div id="detail-skills" class="skills-container"></div>
+                    </section>
+
+                    <section class="content-section benefits-section">
+                        <h3><span class="material-icons">card_giftcard</span> Benefits</h3>
+                        <div id="detail-benefits" class="benefits-grid"></div>
+                    </section>
+                </div>
+
+                <div class="sticky-apply-bar">
+                    <div class="sticky-apply-content">
+                        <div class="sticky-job-info">
+                            <span id="sticky-title"></span>
+                            <span id="sticky-company"></span>
+                        </div>
+                        <button class="btn btn-primary" id="applyBtnSticky">
+                            <span class="material-icons">send</span>
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" id="applicationModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Apply for this Position</h2>
+                <button class="modal-close" id="closeModal">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <form id="applicationForm" class="application-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" class="form-control" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" class="form-control" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="resume">Resume/CV *</label>
+                    <div class="file-upload">
+                        <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
+                        <div class="file-upload-label">
+                            <span class="material-icons">cloud_upload</span>
+                            <span>Upload your resume (PDF, DOC, DOCX)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="coverLetter">Cover Letter</label>
+                    <textarea id="coverLetter" class="form-control" rows="4"
+                        placeholder="Tell us why you're a great fit for this role"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-outline" id="cancelBtn">Cancel</button>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="material-icons">send</span>
+                        Submit Application
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="toast" id="successToast">
+        <div class="toast-content">
+            <span class="material-icons">check_circle</span>
+            <span>Application submitted successfully!</span>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-brand-col">
+                    <img src="./assets/Stackly-logo-Blue.webp" alt="Logo" class="logo">
+                    <p class="footer-bio">
+                        Connecting top talent with industry-leading companies. Build your career, or build your team,
+                        all in one seamless platform.
+                    </p>
+                    <div class="social-links">
+                        <a href="404page.html" aria-label="LinkedIn" class="social-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="404page.html" aria-label="Twitter" class="social-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="404page.html" aria-label="GitHub" class="social-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs-listing.html">Find Jobs</a></li>
+                        <li><a href="Company-listing.html">Companies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-title">For Candidates</h4>
+                    <ul class="footer-list">
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="404page.html">Browse Categories</a></li>
+                        <li><a href="404page.html">Candidate Dashboard</a></li>
+                        <li><a href="404page.html">Job Alerts</a></li>
+                        <li><a href="404page.html">Saved Jobs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 class="footer-title">For Employers</h4>
+                    <ul class="footer-list">
+                        <li><a href="404page.html">Post a Job</a></li>
+                        <li><a href="404page.html">Employer Dashboard</a></li>
+                        <li><a href="404page.html">Pricing & Plans</a></li>
+                        <li><a href="404page.html">Search Resumes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Stackly. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="404page.html">English (US)</a>
+                    <a href="404page.html">Help Center</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const jobId = urlParams.get('id');
+
+            if (jobId) {
+                loadJobDetails(jobId);
+            } else {
+                document.getElementById('detail-title').textContent = "Job not found.";
+                window.location.href = 'index.html';
+            }
+
+            const modal = document.getElementById('applicationModal');
+            const applyBtns = document.querySelectorAll('#applyBtn, #applyBtnSticky');
+            const closeModal = document.getElementById('closeModal');
+            const cancelBtn = document.getElementById('cancelBtn');
+
+            applyBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // modal.classList.add('active');
+                    window.location.href = '404page.html';
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            const closeModalHandler = () => {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            };
+
+            closeModal.addEventListener('click', closeModalHandler);
+            cancelBtn.addEventListener('click', closeModalHandler);
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModalHandler();
+                }
+            });
+
+            const form = document.getElementById('applicationForm');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                closeModalHandler();
+                showToast();
+                form.reset();
+            });
+
+            function showToast() {
+                const toast = document.getElementById('successToast');
+                toast.classList.add('show');
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 4000);
+            }
+
+            async function loadJobDetails(id) {
+                try {
+                    const response = await fetch('jobs.json');
+                    const jobs = await response.json();
+                    const selectedJob = jobs.find(job => job.id == id);
+
+                    if (selectedJob) {
+                        document.getElementById('detail-title').textContent = selectedJob.title;
+                        document.getElementById('detail-company').textContent = selectedJob.company;
+                        document.getElementById('detail-location').textContent = selectedJob.location;
+                        document.getElementById('detail-description').textContent = selectedJob.description;
+                        document.getElementById('detail-salary').textContent = selectedJob.salary;
+
+                        document.getElementById('sticky-title').textContent = selectedJob.title;
+                        document.getElementById('sticky-company').textContent = selectedJob.company;
+
+                        const logoEl = document.getElementById('detail-logo');
+                        logoEl.src = selectedJob.logo;
+                        logoEl.alt = `${selectedJob.company} Logo`;
+                        logoEl.style.display = 'block';
+
+                        const typeEl = document.getElementById('detail-type');
+                        typeEl.textContent = selectedJob.type;
+                        typeEl.className = 'badge badge-primary';
+
+                        const postedEl = document.getElementById('detail-posted');
+                        const postedDays = selectedJob.posted;
+                        postedEl.textContent = postedDays === 1 ? 'Posted 1 day ago' : `Posted ${postedDays} days ago`;
+
+                        const respList = document.getElementById('detail-responsibilities');
+                        respList.innerHTML = '';
+                        if (selectedJob.responsibilities) {
+                            selectedJob.responsibilities.forEach(resp => {
+                                const li = document.createElement('li');
+                                li.innerHTML = `<span class="material-icons">arrow_right</span>${resp}`;
+                                respList.appendChild(li);
+                            });
+                        }
+
+                        const reqList = document.getElementById('detail-requirements');
+                        reqList.innerHTML = '';
+                        selectedJob.requirements.forEach(req => {
+                            const li = document.createElement('li');
+                            li.innerHTML = `<span class="material-icons">check_circle</span>${req}`;
+                            reqList.appendChild(li);
+                        });
+
+                        const skillsContainer = document.getElementById('detail-skills');
+                        skillsContainer.innerHTML = '';
+                        selectedJob.skills.forEach(skill => {
+                            const skillPill = document.createElement('span');
+                            skillPill.className = 'skill-pill';
+                            skillPill.textContent = skill;
+                            skillsContainer.appendChild(skillPill);
+                        });
+
+                        const benefitsContainer = document.getElementById('detail-benefits');
+                        benefitsContainer.innerHTML = '';
+                        if (selectedJob.benefits) {
+                            selectedJob.benefits.forEach(benefit => {
+                                const benefitCard = document.createElement('div');
+                                benefitCard.className = 'benefit-item';
+                                benefitCard.innerHTML = `
+                                    <span class="material-icons">star</span>
+                                    <span>${benefit}</span>
+                                `;
+                                benefitsContainer.appendChild(benefitCard);
+                            });
+                        }
+
+                        document.title = `${selectedJob.title} at ${selectedJob.company} - Stackly Jobs`;
+
+                    } else {
+                        document.getElementById('detail-title').textContent = "Job no longer available.";
+                    }
+
+                } catch (error) {
+                    console.error('Error fetching job details:', error);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
