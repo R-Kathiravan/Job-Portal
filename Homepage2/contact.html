@@ -384,16 +384,12 @@
 
     <script src="script.js"></script>
     <script>
-        // Form Validation
         const contactForm = document.getElementById('contactForm');
 
-        // Email validation regex
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        // Phone validation regex (allows various formats)
         const phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
 
-        // Show error message
         function showError(input, message) {
             const formGroup = input.parentElement;
             const existingError = formGroup.querySelector('.error-message');
@@ -412,7 +408,6 @@
             formGroup.appendChild(errorDiv);
         }
 
-        // Clear error
         function clearError(input) {
             const formGroup = input.parentElement;
             const existingError = formGroup.querySelector('.error-message');
@@ -422,17 +417,14 @@
             input.style.borderColor = '#E2E8F0';
         }
 
-        // Validate field
         function validateField(input, rules) {
             const value = input.value.trim();
 
-            // Check required
             if (rules.required && value === '') {
                 showError(input, rules.required);
                 return false;
             }
 
-            // Check email format
             if (rules.email && value !== '') {
                 if (!emailRegex.test(value)) {
                     showError(input, rules.email);
@@ -440,7 +432,6 @@
                 }
             }
 
-            // Check phone format
             if (rules.phone && value !== '') {
                 if (!phoneRegex.test(value)) {
                     showError(input, rules.phone);
@@ -448,18 +439,15 @@
                 }
             }
 
-            // Check min length
             if (rules.minLength && value.length < rules.minLength) {
                 showError(input, rules.minLength);
                 return false;
             }
 
-            // Clear any existing error
             clearError(input);
             return true;
         }
 
-        // Real-time validation on blur
         contactForm.querySelectorAll('input, select, textarea').forEach(input => {
             input.addEventListener('blur', function () {
                 const rules = getValidationRules(this);
@@ -468,13 +456,11 @@
                 }
             });
 
-            // Clear error on input
             input.addEventListener('input', function () {
                 clearError(this);
             });
         });
 
-        // Get validation rules based on field
         function getValidationRules(input) {
             const id = input.id;
 
@@ -496,14 +482,12 @@
             }
         }
 
-        // Form submission
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
 
             let isValid = true;
             const formData = {};
 
-            // Validate all fields
             contactForm.querySelectorAll('input, select, textarea').forEach(input => {
                 const rules = getValidationRules(input);
                 if (rules) {
@@ -515,20 +499,16 @@
             });
 
             if (!isValid) {
-                // Scroll to first error
                 const firstError = contactForm.querySelector('.error-message');
                 if (firstError) {
                     firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 }
                 return;
             }
-
-            // Success - show message and reset form
-            alert('Thank you for your message! Our team will contact you within 24 hours.');
+            window.location.href = '404page.html';
             contactForm.reset();
         });
 
-        // FAQ Accordion
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const item = question.parentElement;
