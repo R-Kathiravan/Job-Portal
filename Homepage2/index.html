@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Recuirment Agency </title>
+    <meta name="description" content="Stackly Job portal helps you to find your dream job" />
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="header-container">
+        <header id="header">
+            <div class="head-cls">
+                <a href="index.html">
+                    <img src="./assets/stackly-logo.webp" alt="Stackly Logo" class="logo">
+                </a>
+                <div class="menu-items" id="navMenu">
+                    <div class="home-nav active">
+                        <a href="index.html" class="home-btn nav-link">Home</a>
+                        <span class="material-icons dropdown-icon" id="homeDropdownBtn">
+                            expand_more
+                        </span>
+                        <div class="home-select" id="homeDropdown">
+                            <a href="../index.html" class="nav-link">Home Page 1</a>
+                        </div>
+                    </div> <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                    <div class="close-btn material-icons" id="closeMenu">close</div>
+                    <div class="head-btns mob-view">
+                        <a href="login.html" class="btn btn-primary">Login</a>
+                    </div>
+                </div>
+                <div class="head-btns">
+                    <a href="login.html" class="btn btn-primary">Login <span class="material-icons">login</span></a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="material-icons">menu</span>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-eyebrow">EXECUTIVE SEARCH & IT STAFFING</span>
+                <h1 class="hero-headline">
+                    We Connect Visionary Companies with <span class="highlight">Exceptional Talent</span>
+                </h1>
+                <p class="hero-subheadline">
+                    Stop digging through unqualified resumes. Get a curated shortlist of vetted, interview-ready
+                    professionals delivered to your inbox in 48 hours. Our rigorous 7-step verification process ensures
+                    every candidate exceeds your expectations.
+                </p>
+                <div class="hero-ctas">
+                    <a href="404page.html" class="btn btn-primary btn-request-talent">Request Talent</a>
+                    <a href="404page.html" class="btn btn-outline btn-explore-services">See How It Works</a>
+                </div>
+                <div class="hero-social-proof">
+                    <span><i class="fas fa-star"></i></span>
+                    <span>4.9/5 Client Rating</span>
+                    <span class="proof-divider">|</span>
+                    <span>200+ Companies Trust Us</span>
+                </div>
+                <div class="trust-badges">
+                    <div class="badge-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>ISO 9001 Certified</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fas fa-award"></i>
+                        <span>Inc. 5000 Winner</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fas fa-handshake"></i>
+                        <span>10+ Years Experience</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="candidate-cards">
+                    <div class="candidate-card card-1">
+                        <div class="card-badge">Available Now</div>
+                        <div class="card-header-info">
+                            <div class="card-avatar">
+                                <img src="../assets/review1.webp" alt="Candidate">
+                            </div>
+                            <div class="card-title-area">
+                                <h4>Senior .NET Developer</h4>
+                                <span class="card-experience">8+ Years Exp.</span>
+                            </div>
+                        </div>
+                        <div class="card-skills">
+                            <span class="skill-pill">.NET Core</span>
+                            <span class="skill-pill">Azure</span>
+                            <span class="skill-pill">React</span>
+                            <span class="skill-pill">SQL Server</span>
+                        </div>
+                        <div class="card-footer-info">
+                            <span class="card-rate">$120/hr</span>
+                            <span class="card-location"><i class="fas fa-map-marker-alt"></i> Remote</span>
+                        </div>
+                    </div>
+
+                    <div class="candidate-card card-2">
+                        <div class="card-badge verified">Verified</div>
+                        <div class="card-header-info">
+                            <div class="card-avatar">
+                                <img src="../assets/review2.webp" alt="Candidate">
+                            </div>
+                            <div class="card-title-area">
+                                <h4>Full Stack Engineer</h4>
+                                <span class="card-experience">6+ Years Exp.</span>
+                            </div>
+                        </div>
+                        <div class="card-skills">
+                            <span class="skill-pill">Node.js</span>
+                            <span class="skill-pill">TypeScript</span>
+                            <span class="skill-pill">AWS</span>
+                            <span class="skill-pill">GraphQL</span>
+                        </div>
+                        <div class="card-footer-info">
+                            <span class="card-rate">$95/hr</span>
+                            <span class="card-location"><i class="fas fa-map-marker-alt"></i> Hybrid</span>
+                        </div>
+                    </div>
+
+                    <div class="candidate-card card-3">
+                        <div class="card-badge">Top Rated</div>
+                        <div class="card-header-info">
+                            <div class="card-avatar">
+                                <img src="../assets/review3.webp" alt="Candidate">
+                            </div>
+                            <div class="card-title-area">
+                                <h4>DevOps Lead</h4>
+                                <span class="card-experience">10+ Years Exp.</span>
+                            </div>
+                        </div>
+                        <div class="card-skills">
+                            <span class="skill-pill">Kubernetes</span>
+                            <span class="skill-pill">Terraform</span>
+                            <span class="skill-pill">CI/CD</span>
+                            <span class="skill-pill">Docker</span>
+                        </div>
+                        <div class="card-footer-info">
+                            <span class="card-rate">$150/hr</span>
+                            <span class="card-location"><i class="fas fa-map-marker-alt"></i> On-site</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact-bar">
+        <div class="impact-container">
+            <div class="impact-stat">
+                <span class="impact-number" data-target="14">0</span>
+                <span class="impact-unit">Days</span>
+                <span class="impact-label">Average Time-to-Fill</span>
+            </div>
+            <div class="impact-divider"></div>
+            <div class="impact-stat">
+                <span class="impact-number" data-target="98" data-suffix="%">0</span>
+                <span class="impact-unit"></span>
+                <span class="impact-label">Candidate Retention Rate</span>
+            </div>
+            <div class="impact-divider"></div>
+            <div class="impact-stat">
+                <span class="impact-number" data-target="50000" data-suffix="+">0</span>
+                <span class="impact-unit"></span>
+                <span class="impact-label">Vetted Professionals in Network</span>
+            </div>
+            <div class="impact-divider"></div>
+            <div class="impact-stat">
+                <span class="impact-number" data-target="24" data-suffix="Hrs">0</span>
+                <span class="impact-unit"></span>
+                <span class="impact-label">Initial Shortlist Delivery</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="talent-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ready to Interview Today</h2>
+                <p>Meet vetted professionals available for immediate placement. Every candidate has passed our rigorous
+                    7-step verification process including technical assessment, reference checks, and background
+                    verification.</p>
+            </div>
+            <div class="talent-grid">
+                <div class="talent-card">
+                    <div class="talent-header">
+                        <div class="talent-avatar">
+                            <img src="../assets/review1.webp" alt="Candidate">
+                        </div>
+                        <div class="talent-info">
+                            <h4>Senior Frontend Engineer</h4>
+                            <span class="talent-exp">8 Years Exp.</span>
+                        </div>
+                    </div>
+                    <div class="talent-availability">
+                        <span class="availability-badge">Available Immediately</span>
+                    </div>
+                    <div class="talent-skills">
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Vue.js</span>
+                    </div>
+                    <div class="talent-meta">
+                        <span><i class="fas fa-briefcase"></i> Full-Time Preferred</span>
+                        <span><i class="fas fa-globe"></i> Remote/Hybrid</span>
+                    </div>
+                    <a href="404page.html" class="btn btn-ghost">Request Interview</a>
+                </div>
+
+                <div class="talent-card">
+                    <div class="talent-header">
+                        <div class="talent-avatar">
+                            <img src="../assets/review2.webp" alt="Candidate">
+                        </div>
+                        <div class="talent-info">
+                            <h4>Full Stack Developer</h4>
+                            <span class="talent-exp">6 Years Exp.</span>
+                        </div>
+                    </div>
+                    <div class="talent-availability">
+                        <span class="availability-badge">Available Immediately</span>
+                    </div>
+                    <div class="talent-skills">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                    <div class="talent-meta">
+                        <span><i class="fas fa-briefcase"></i> Full-Time</span>
+                        <span><i class="fas fa-globe"></i> Remote Only</span>
+                    </div>
+                    <a href="404page.html" class="btn btn-ghost">Request Interview</a>
+                </div>
+
+                <div class="talent-card">
+                    <div class="talent-header">
+                        <div class="talent-avatar">
+                            <img src="../assets/review3.webp" alt="Candidate">
+                        </div>
+                        <div class="talent-info">
+                            <h4>DevOps Engineer</h4>
+                            <span class="talent-exp">7 Years Exp.</span>
+                        </div>
+                    </div>
+                    <div class="talent-availability">
+                        <span class="availability-badge">Available Immediately</span>
+                    </div>
+                    <div class="talent-skills">
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Jenkins</span>
+                    </div>
+                    <div class="talent-meta">
+                        <span><i class="fas fa-briefcase"></i> Contract</span>
+                        <span><i class="fas fa-globe"></i> On-site</span>
+                    </div>
+                    <a href="404page.html" class="btn btn-ghost">Request Interview</a>
+                </div>
+
+                <div class="talent-card">
+                    <div class="talent-header">
+                        <div class="talent-avatar">
+                            <img src="../assets/review4.webp" alt="Candidate">
+                        </div>
+                        <div class="talent-info">
+                            <h4>Backend Lead</h4>
+                            <span class="talent-exp">10 Years Exp.</span>
+                        </div>
+                    </div>
+                    <div class="talent-availability">
+                        <span class="availability-badge">Available Immediately</span>
+                    </div>
+                    <div class="talent-skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">FastAPI</span>
+                    </div>
+                    <div class="talent-meta">
+                        <span><i class="fas fa-briefcase"></i> Full-Time</span>
+                        <span><i class="fas fa-globe"></i> Hybrid</span>
+                    </div>
+                    <a href="404page.html" class="btn btn-ghost">Request Interview</a>
+                </div>
+
+                <div class="talent-card">
+                    <div class="talent-header">
+                        <div class="talent-avatar">
+                            <img src="../assets/review5.webp" alt="Candidate">
+                        </div>
+                        <div class="talent-info">
+                            <h4>Mobile Developer</h4>
+                            <span class="talent-exp">5 Years Exp.</span>
+                        </div>
+                    </div>
+                    <div class="talent-availability">
+                        <span class="availability-badge">Available Immediately</span>
+                    </div>
+                    <div class="talent-skills">
+                        <span class="skill-tag">React Native</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Swift</span>
+                    </div>
+                    <div class="talent-meta">
+                        <span><i class="fas fa-briefcase"></i> Full-Time</span>
+                        <span><i class="fas fa-globe"></i> Remote</span>
+                    </div>
+                    <a href="404page.html" class="btn btn-ghost">Request Interview</a>
+                </div>
+
+                <div class="talent-card">
+                    <div class="talent-header">
+                        <div class="talent-avatar">
+                            <img src="../assets/review2.webp" alt="Candidate">
+                        </div>
+                        <div class="talent-info">
+                            <h4>Data Engineer</h4>
+                            <span class="talent-exp">6 Years Exp.</span>
+                        </div>
+                    </div>
+                    <div class="talent-availability">
+                        <span class="availability-badge">Available Immediately</span>
+                    </div>
+                    <div class="talent-skills">
+                        <span class="skill-tag">Spark</span>
+                        <span class="skill-tag">Airflow</span>
+                        <span class="skill-tag">Snowflake</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                    <div class="talent-meta">
+                        <span><i class="fas fa-briefcase"></i> Contract-to-Hire</span>
+                        <span><i class="fas fa-globe"></i> Hybrid</span>
+                    </div>
+                    <a href="404page.html" class="btn btn-ghost">Request Interview</a>
+                </div>
+
+                <div class="talent-card">
+                    <div class="talent-header">
+                        <div class="talent-avatar">
+                            <img src="../assets/review1.webp" alt="Candidate">
+                        </div>
+                        <div class="talent-info">
+                            <h4>QA Automation Lead</h4>
+                            <span class="talent-exp">9 Years Exp.</span>
+                        </div>
+                    </div>
+                    <div class="talent-availability">
+                        <span class="availability-badge">Available Immediately</span>
+                    </div>
+                    <div class="talent-skills">
+                        <span class="skill-tag">Selenium</span>
+                        <span class="skill-tag">Cypress</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Playwright</span>
+                    </div>
+                    <div class="talent-meta">
+                        <span><i class="fas fa-briefcase"></i> Full-Time</span>
+                        <span><i class="fas fa-globe"></i> Remote</span>
+                    </div>
+                    <a href="404page.html" class="btn btn-ghost">Request Interview</a>
+                </div>
+
+                <div class="talent-card">
+                    <div class="talent-header">
+                        <div class="talent-avatar">
+                            <img src="../assets/review3.webp" alt="Candidate">
+                        </div>
+                        <div class="talent-info">
+                            <h4>Cloud Architect</h4>
+                            <span class="talent-exp">12 Years Exp.</span>
+                        </div>
+                    </div>
+                    <div class="talent-availability">
+                        <span class="availability-badge">Available Immediately</span>
+                    </div>
+                    <div class="talent-skills">
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Terraform</span>
+                    </div>
+                    <div class="talent-meta">
+                        <span><i class="fas fa-briefcase"></i> Consulting</span>
+                        <span><i class="fas fa-globe"></i> On-site</span>
+                    </div>
+                    <a href="404page.html" class="btn btn-ghost">Request Interview</a>
+                </div>
+            </div>
+
+            <div class="talent-cta">
+                <p>Don't see the perfect match? We have 50,000+ more professionals in our network.</p>
+                <a href="404page.html" class="btn btn-primary">Browse All Candidates</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process-timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How We Work</h2>
+                <p>A proven, data-driven process designed to find your perfect candidate faster than anyone else in the
+                    industry.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-step" data-delay="0">
+                    <div class="timeline-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>The Discovery</h3>
+                        <p>We dive deep into understanding your company culture, technical requirements, team dynamics,
+                            and long-term goals. This 360-degree view ensures we find candidates who not only have the
+                            right skills but also align with your vision.</p>
+                        <ul class="process-list">
+                            <li><i class="fas fa-check"></i> Culture fit assessment</li>
+                            <li><i class="fas fa-check"></i> Technical stack analysis</li>
+                            <li><i class="fas fa-check"></i> Growth trajectory mapping</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-step" data-delay="1">
+                    <div class="timeline-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>The Sourcing</h3>
+                        <p>We tap into our exclusive network of 50,000+ pre-vetted professionals. Our AI-powered
+                            matching algorithm identifies candidates who meet your exact criteria, going beyond keywords
+                            to understand intent and potential.</p>
+                        <ul class="process-list">
+                            <li><i class="fas fa-check"></i> Passive candidate outreach</li>
+                            <li><i class="fas fa-check"></i> Skills assessment tests</li>
+                            <li><i class="fas fa-check"></i> Reference validation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-step" data-delay="2">
+                    <div class="timeline-icon">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>The Shortlist</h3>
+                        <p>Within just 48 hours, you receive a curated shortlist of 3-5 highly qualified candidates.
+                            Each profile includes a detailed competency report, video introduction, and salary
+                            expectations.</p>
+                        <ul class="process-list">
+                            <li><i class="fas fa-check"></i> Video introductions</li>
+                            <li><i class="fas fa-check"></i> Technical assessments</li>
+                            <li><i class="fas fa-check"></i> Availability confirmation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-step" data-delay="3">
+                    <div class="timeline-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>The Hire</h3>
+                        <p>We don't just find candidates – we ensure long-term success. From offer negotiation to
+                            onboarding support, our dedicated team ensures a seamless transition and 90-day retention
+                            guarantee.</p>
+                        <ul class="process-list">
+                            <li><i class="fas fa-check"></i> Offer negotiation support</li>
+                            <li><i class="fas fa-check"></i> Onboarding assistance</li>
+                            <li><i class="fas fa-check"></i> 90-day replacement guarantee</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="success-stories-section">
+        <div class="container">
+            <div class="success-stories-grid">
+                <div class="success-stories-content">
+                    <h2>Partners in Growth</h2>
+                    <p>Our placements don't just fill positions - they build legacies. We focus on long-term matches
+                        that stick, ensuring your team grows stronger together. Every candidate we place is vetted for
+                        cultural fit and technical excellence, delivering measurable business impact from day one.</p>
+                    <div class="success-stats">
+                        <div class="success-stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Placements This Year</span>
+                        </div>
+                        <div class="success-stat-item">
+                            <span class="stat-number">94%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="success-stories-slider">
+                    <div class="success-cards-wrapper">
+                        <div class="success-card active">
+                            <div class="metric-badge">Time-to-Hire Reduced by 45%</div>
+                            <blockquote class="success-quote">
+                                "Stackly completely transformed our engineering pipeline. We stopped wasting hours on
+                                unqualified interviews and hired three senior developers in two weeks. Their vetting
+                                process is unmatched in the industry."
+                            </blockquote>
+                            <div class="success-author">
+                                <div class="author-info">
+                                    <span class="author-name">Sarah Chen</span>
+                                    <span class="author-title">VP of Engineering, InnovateTech</span>
+                                </div>
+                                <div class="company-logo-small">
+                                    <img src="../assets/logo-google.webp" alt="Company Logo"
+                                        style="filter: grayscale(100%); opacity: 0.6;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="success-card">
+                            <div class="metric-badge">Scaled Team from 10 to 50</div>
+                            <blockquote class="success-quote">
+                                "We needed to double our engineering team in six months while maintaining our culture.
+                                Stackly delivered 25 top-tier developers who all passed their probation with flying
+                                colors. couldn't recommend them more highly."
+                            </blockquote>
+                            <div class="success-author">
+                                <div class="author-info">
+                                    <span class="author-name">Michael Torres</span>
+                                    <span class="author-title">CTO, GrowthStartup</span>
+                                </div>
+                                <div class="company-logo-small">
+                                    <img src="../assets/logo-meta.webp" alt="Company Logo"
+                                        style="filter: grayscale(100%); opacity: 0.6;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="success-card">
+                            <div class="metric-badge">98% Retention Rate</div>
+                            <blockquote class="success-quote">
+                                "Three years later, every developer Stackly placed is still with us. Their rigorous
+                                screening saved us countless turnover costs. It's rare to find a partner who truly
+                                invests in your long-term success."
+                            </blockquote>
+                            <div class="success-author">
+                                <div class="author-info">
+                                    <span class="author-name">Emily Rodriguez</span>
+                                    <span class="author-title">Director of People, EnterpriseCo</span>
+                                </div>
+                                <div class="company-logo-small">
+                                    <img src="../assets/logo-amazon.webp" alt="Company Logo"
+                                        style="filter: grayscale(100%); opacity: 0.6;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="success-card">
+                            <div class="metric-badge">50% Cost Reduction</div>
+                            <blockquote class="success-quote">
+                                "We compared three agencies and Stackly delivered the best ROI. We saved over $200k in
+                                recruitment fees while actually improving hire quality. The ROI was immediate and
+                                continues to pay dividends."
+                            </blockquote>
+                            <div class="success-author">
+                                <div class="author-info">
+                                    <span class="author-name">David Kim</span>
+                                    <span class="author-title">CFO, FinTech Solutions</span>
+                                </div>
+                                <div class="company-logo-small">
+                                    <img src="../assets/logo-microsoft.webp" alt="Company Logo"
+                                        style="filter: grayscale(100%); opacity: 0.6;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive staffing solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Executive Search</h3>
+                    <p>Find leadership talent that drives your organization forward.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>IT Staffing</h3>
+                    <p>Connect with skilled developers and tech professionals.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Quick Placement</h3>
+                    <p>Get vetted candidates in as little as 48 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Hiring?</h2>
+                <p>Join 200+ companies who've found their perfect match with Stackly. Get started today and experience
+                    the difference of working with true recruitment partners.</p>
+                <div class="cta-buttons">
+                    <a href="404page.html" class="btn btn-primary btn-cta">Get Started</a>
+                    <a href="404page.html" class="btn btn-outline btn-cta-outline">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="./assets/stackly-logo.webp" alt="Stackly Logo" style="width: 140px;">
+                    </div>
+                    <p class="footer-bio">Connecting visionary companies with exceptional talent since 2014. We're
+                        committed to building lasting relationships and delivering measurable business impact.</p>
+                    <div class="social-links">
+                        <a href="404page.html" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="404page.html" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="404page.html" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="404page.html" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-list">
+                        <li><a href="404page.html">Executive Search</a></li>
+                        <li><a href="404page.html">IT Staffing</a></li>
+                        <li><a href="404page.html">Quick Placement</a></li>
+                        <li><a href="404page.html">Contract Staffing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-title">Resources</h4>
+                    <ul class="footer-list">
+                        <li><a href="404page.html">Salary Guide</a></li>
+                        <li><a href="404page.html">Market Insights</a></li>
+                        <li><a href="404page.html">Case Studies</a></li>
+                        <li><a href="404page.html">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Stackly. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="404page.html">Privacy Policy</a>
+                    <a href="404page.html">Terms of Service</a>
+                    <a href="404page.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const homeDropdownBtn = document.getElementById("homeDropdownBtn");
+        const homeDropdown = document.getElementById("homeDropdown");
+        const icon = document.querySelector(".dropdown-icon");
+
+        homeDropdownBtn.addEventListener("click", () => {
+            homeDropdown.classList.toggle("show");
+            icon.classList.toggle("rotate");
+        });
+        document.addEventListener("click", (e) => {
+            if (!homeDropdown.contains(e.target) && !homeDropdownBtn.contains(e.target)) {
+                homeDropdown.classList.remove("show");
+                icon.classList.remove("rotate");
+            }
+        });
+    </script>
+</body>
+
+</html>

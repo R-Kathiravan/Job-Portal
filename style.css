@@ -32,6 +32,70 @@
 }
 
 
+.home-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.home-btn {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dropdown-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--color-accent);
+    transition: 0.3s ease;
+}
+
+.dropdown-icon.rotate {
+    transform: rotate(180deg);
+}
+
+.home-select {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    border: 1px solid #555454;
+    border-radius: 10px;
+    min-width: max-content;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 100;
+    background-color: var(--bg);
+}
+
+.home-select.show {
+    display: block;
+}
+
+.home-select a {
+    display: block;
+    padding: 10px 14px;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.home-select a:hover {
+    color: var(--green-dark);
+}
+
+@media (max-width:768px) {
+    .home-select {
+        top: 50px;
+    }
+}
+
 .hero-section {
     position: relative;
     padding: 80px 0 100px;

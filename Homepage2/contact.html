@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Stackly</title>
+    <meta name="description"
+        content="Get in touch with Stackly - a premier technical search firm. Contact us for executive search, IT staffing, and talent solutions." />
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <header id="header">
+            <div class="head-cls">
+                <a href="index.html">
+                    <img src="./assets/stackly-logo.webp" alt="Stackly Logo" class="logo">
+                </a>
+                <div class="menu-items" id="navMenu">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html" class="active">Contact</a>
+                    <div class="close-btn material-icons" id="closeMenu">close</div>
+                    <div class="head-btns mob-view">
+                        <a href="login.html" class="btn btn-primary">Login</a>
+                    </div>
+                </div>
+                <div class="head-btns">
+                    <a href="login.html" class="btn btn-primary">Login <span class="material-icons">login</span></a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="material-icons">menu</span>
+                </div>
+            </div>
+        </header>
+    </div>
+    <section class="contact-hero-section">
+        <div class="contact-hero-container">
+            <div class="contact-hero-content">
+                <span class="contact-hero-eyebrow">GET IN TOUCH</span>
+                <h1 class="contact-hero-headline">Let's Build Your Dream Team Together</h1>
+                <p class="contact-hero-subtext">Ready to transform your hiring process? Our team of technical
+                    recruitment experts is here to help you find the perfect talent for your organization.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>Speak with our recruitment specialists</p>
+                    <a href="404page.html">+91 9876543210</a>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Send us a message anytime</p>
+                    <a href="404page.html">info@thestackly.com</a>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Office</h3>
+                    <p>Visit our headquarters</p>
+                    <span>Stackly Phase 1, Salem, <b>Tamil Nadu</b></span>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Hours</h3>
+                    <p>We're available when you need us</p>
+                    <span>Mon-Fri: 9AM - 6PM IST</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-grid">
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h2>Send us a Message</h2>
+                        <p>Fill out the form below and our team will get back to you within 24 hours.</p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required placeholder="John">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@company.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="number" id="phone" name="phone" placeholder="+91 9876543210">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Your Company Inc.">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="permanent">Permanent / Direct Hire</option>
+                                <option value="contract">Contract Staffing</option>
+                                <option value="executive">Executive Search</option>
+                                <option value="staff-augmentation">Staff Augmentation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Tell us about your hiring needs..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Why Choose Stackly?</h3>
+                        <ul class="benefits-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>98% First-Year Retention Rate</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>14 Days Average Time-to-Fill</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>50,000+ Vetted Professionals</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>90-Day Replacement Guarantee</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>24-Hour Initial Shortlist</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Quick Connect</h3>
+                        <p>Prefer a different way to reach us?</p>
+                        <div class="quick-connect">
+                            <a href="404page.html" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="404page.html" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="404page.html" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="404page.html" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="locations-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Our Locations</h2>
+                <p>With offices across major tech hubs, we're positioned to serve clients globally.</p>
+            </div>
+
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-map-pin"></i>
+                    </div>
+                    <h3>Stackly Phase 1</h3>
+                    <p>Chinna Thirupathi<br>Salem, Tamil Nadu</p>
+                    <a href="404page.html">+91 9876543210</a>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-map-pin"></i>
+                    </div>
+                    <h3>Stackly Phase 2</h3>
+                    <p>Omalur <br>Salem, Tamil Nadu</p>
+                    <a href="404page.html">+91 9123456780</a>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-map-pin"></i>
+                    </div>
+                    <h3>Bengaluru Office</h3>
+                    <p>Electronics City<br>Bengaluru, Karnataka</p>
+                    <a href="404page.html">+91 923457810</a>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-map-pin"></i>
+                    </div>
+                    <h3>Hyderabad Stackly Office</h3>
+                    <p>Hyderabad<br>Hyderabad, Andhra Pradesh </p>
+                    <a href="404page.html">+91 876542190</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our services.</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How quickly can you provide candidates?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our average time-to-fill is 14 days. For urgent requirements, we can provide an initial
+                            shortlist within 24-48 hours thanks to our extensive network of 50,000+ pre-vetted
+                            professionals.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What is your success fee structure?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer flexible engagement models including contingency search (no upfront cost, pay only
+                            on success) and retained search (dedicated resources with priority scheduling). Contact us
+                            for a customized quote based on your needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do you offer any guarantees?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer a 90-day replacement guarantee. If our placed candidate isn't the perfect fit
+                            within the first 90 days, we will replace them at zero additional cost.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What industries do you specialize in?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We specialize in technical talent across all major tech stacks including Frontend (Angular,
+                            React, Vue), Backend (.NET, Node.js, Python), Cloud (AWS, Azure, GCP), Mobile, DevOps, and
+                            AI/ML domains.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How do you vet your candidates?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our rigorous 7-step verification process includes technical assessments, behavioral
+                            interviews, reference checks, background verification, skills testing, culture fit
+                            assessment, and credential validation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Can you help with remote hiring?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We have experience placing remote talent globally and can help you build
+                            distributed teams. We understand the unique challenges of remote hiring and can source
+                            candidates comfortable with remote work arrangements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="./assets/stackly-logo.webp" alt="Stackly Logo" style="width: 140px;">
+                    </div>
+                    <p class="footer-bio">Connecting visionary companies with exceptional talent since 2014. We're
+                        committed to building lasting relationships and delivering measurable business impact.</p>
+                    <div class="social-links">
+                        <a href="404page.html" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="404page.html" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="404page.html" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="404page.html" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-list">
+                        <li><a href="404page.html">Executive Search</a></li>
+                        <li><a href="404page.html">IT Staffing</a></li>
+                        <li><a href="404page.html">Quick Placement</a></li>
+                        <li><a href="404page.html">Contract Staffing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-title">Resources</h4>
+                    <ul class="footer-list">
+                        <li><a href="404page.html">Salary Guide</a></li>
+                        <li><a href="404page.html">Market Insights</a></li>
+                        <li><a href="404page.html">Case Studies</a></li>
+                        <li><a href="404page.html">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Stackly. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="404page.html">Privacy Policy</a>
+                    <a href="404page.html">Terms of Service</a>
+                    <a href="404page.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script>
+        // Form Validation
+        const contactForm = document.getElementById('contactForm');
+
+        // Email validation regex
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // Phone validation regex (allows various formats)
+        const phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+
+        // Show error message
+        function showError(input, message) {
+            const formGroup = input.parentElement;
+            const existingError = formGroup.querySelector('.error-message');
+            if (existingError) {
+                existingError.remove();
+            }
+
+            input.style.borderColor = '#dc2626';
+
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error-message';
+            errorDiv.style.color = '#dc2626';
+            errorDiv.style.fontSize = '0.85rem';
+            errorDiv.style.marginTop = '0.5rem';
+            errorDiv.textContent = message;
+            formGroup.appendChild(errorDiv);
+        }
+
+        // Clear error
+        function clearError(input) {
+            const formGroup = input.parentElement;
+            const existingError = formGroup.querySelector('.error-message');
+            if (existingError) {
+                existingError.remove();
+            }
+            input.style.borderColor = '#E2E8F0';
+        }
+
+        // Validate field
+        function validateField(input, rules) {
+            const value = input.value.trim();
+
+            // Check required
+            if (rules.required && value === '') {
+                showError(input, rules.required);
+                return false;
+            }
+
+            // Check email format
+            if (rules.email && value !== '') {
+                if (!emailRegex.test(value)) {
+                    showError(input, rules.email);
+                    return false;
+                }
+            }
+
+            // Check phone format
+            if (rules.phone && value !== '') {
+                if (!phoneRegex.test(value)) {
+                    showError(input, rules.phone);
+                    return false;
+                }
+            }
+
+            // Check min length
+            if (rules.minLength && value.length < rules.minLength) {
+                showError(input, rules.minLength);
+                return false;
+            }
+
+            // Clear any existing error
+            clearError(input);
+            return true;
+        }
+
+        // Real-time validation on blur
+        contactForm.querySelectorAll('input, select, textarea').forEach(input => {
+            input.addEventListener('blur', function () {
+                const rules = getValidationRules(this);
+                if (rules) {
+                    validateField(this, rules);
+                }
+            });
+
+            // Clear error on input
+            input.addEventListener('input', function () {
+                clearError(this);
+            });
+        });
+
+        // Get validation rules based on field
+        function getValidationRules(input) {
+            const id = input.id;
+
+            switch (id) {
+                case 'firstName':
+                    return { required: 'First name is required', minLength: 'First name must be at least 2 characters' };
+                case 'lastName':
+                    return { required: 'Last name is required', minLength: 'Last name must be at least 2 characters' };
+                case 'email':
+                    return { required: 'Email is required', email: 'Please enter a valid email address' };
+                case 'phone':
+                    return { phone: 'Please enter a valid phone number' };
+                case 'service':
+                    return { required: 'Please select a service' };
+                case 'message':
+                    return { required: 'Message is required', minLength: 'Message must be at least 10 characters' };
+                default:
+                    return null;
+            }
+        }
+
+        // Form submission
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            let isValid = true;
+            const formData = {};
+
+            // Validate all fields
+            contactForm.querySelectorAll('input, select, textarea').forEach(input => {
+                const rules = getValidationRules(input);
+                if (rules) {
+                    if (!validateField(input, rules)) {
+                        isValid = false;
+                    }
+                    formData[input.name] = input.value.trim();
+                }
+            });
+
+            if (!isValid) {
+                // Scroll to first error
+                const firstError = contactForm.querySelector('.error-message');
+                if (firstError) {
+                    firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+                return;
+            }
+
+            // Success - show message and reset form
+            alert('Thank you for your message! Our team will contact you within 24 hours.');
+            contactForm.reset();
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -23,7 +23,15 @@
                 <img src="./assets/Stackly-logo-Blue.webp" alt="Stackly Logo" class="logo">
             </a>
             <nav class="menu-items" id="navMenu">
-                <a href="index.html" class="active">Home</a>
+                <div class="home-nav active">
+                    <a href="index.html" class="home-btn nav-link">Home</a>
+                    <span class="material-icons dropdown-icon" id="homeDropdownBtn">
+                        expand_more
+                    </span>
+                    <div class="home-select" id="homeDropdown">
+                        <a href="./Homepage2/index.html" class="nav-link">Home Page 2</a>
+                    </div>
+                </div>
                 <a href="jobs-listing.html">Find Jobs</a>
                 <a href="Company-listing.html">Companies</a>
                 <a href="contact.html">Contact</a>
@@ -880,6 +888,20 @@
                     messageEl.classList.remove('show');
                 }
             });
+        });
+        const homeDropdownBtn = document.getElementById("homeDropdownBtn");
+        const homeDropdown = document.getElementById("homeDropdown");
+        const icon = document.querySelector(".dropdown-icon");
+
+        homeDropdownBtn.addEventListener("click", () => {
+            homeDropdown.classList.toggle("show");
+            icon.classList.toggle("rotate");
+        });
+        document.addEventListener("click", (e) => {
+            if (!homeDropdown.contains(e.target) && !homeDropdownBtn.contains(e.target)) {
+                homeDropdown.classList.remove("show");
+                icon.classList.remove("rotate");
+            }
         });
     </script>
 </body>
