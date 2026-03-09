@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Stackly</title>
+    <title>Login -  Recuirment Agency</title>
     <meta name="description" content="Login to Stackly - Access your account and manage your hiring needs." />
     <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="login.css">
@@ -34,7 +34,8 @@
                     </div>
                 </div>
                 <div class="head-btns">
-                    <a href="login.html" class="btn btn-primary active">Login <span class="material-icons">login</span></a>
+                    <a href="login.html" class="btn btn-primary active">Login <span
+                            class="material-icons">login</span></a>
                 </div>
                 <div class="hamburger" id="hamburger">
                     <span class="material-icons">menu</span>
@@ -102,11 +103,11 @@
                 <div class="social-login">
                     <p>Or continue with</p>
                     <div class="social-buttons">
-                        <a href="#" class="social-auth-btn google">
+                        <a href="404page.html" class="social-auth-btn google">
                             <i class="fab fa-google"></i>
                             Google
                         </a>
-                        <a href="#" class="social-auth-btn linkedin">
+                        <a href="404page.html" class="social-auth-btn linkedin">
                             <i class="fab fa-linkedin-in"></i>
                             LinkedIn
                         </a>
@@ -349,15 +350,23 @@
         }
 
         function clearError(input) {
+
+            if (!input) return;
+
             const formGroup = input.closest('.form-group');
+            if (!formGroup) return;
+
             const existingError = formGroup.querySelector('.error-message');
+
             if (existingError) {
-                existingError.remove();
-                input.style.borderColor = '';
+                existingError.textContent = "";
+                input.style.borderColor = "";
             }
         }
-
         function validateField(input, rules) {
+
+            if (!input) return false;
+
             const value = input.value.trim();
 
             if (rules.required && value === '') {
@@ -375,15 +384,19 @@
                 return false;
             }
 
-            if (rules.match && value !== document.getElementById(rules.match).value) {
-                showError(input, rules.match);
-                return false;
+            if (rules.match) {
+                const matchField = document.getElementById(rules.match.field);
+
+                if (!matchField || value !== matchField.value) {
+                    showError(input, rules.match.message);
+                    return false;
+                }
             }
+
 
             clearError(input);
             return true;
         }
-
         const loginForm = document.getElementById('loginFormElement');
 
         loginForm.querySelectorAll('input').forEach(input => {
@@ -447,7 +460,13 @@
                 case 'signupPassword':
                     return { required: 'Password is required', minLength: 'At least 8 characters' };
                 case 'signupConfirmPassword':
-                    return { required: 'Please confirm password', match: 'Passwords do not match' };
+                    return {
+                        required: 'Please confirm password',
+                        match: {
+                            field: 'signupPassword',
+                            message: 'Passwords do not match'
+                        }
+                    };
                 case 'userType':
                     return { required: 'Please select your role' };
                 default:

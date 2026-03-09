@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Companies - Stackly Job Portal</title>
     <meta name="description" content="Browse top companies hiring on Stackly Job Portal" />
-    <link rel="stylesheet" href="shared.css"> 
+    <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="Company-listing.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,11 +44,11 @@
 
     <main class="company-listing-main">
         <div class="head-hero">
-            <div class="container"> 
+            <div class="container">
                 <section class="company-hero">
                     <h1>Discover Top Companies</h1>
                     <p>Explore thousands of companies actively hiring. Find your perfect workplace.</p>
- 
+
                     <div class="company-search-bar">
                         <div class="search-input-wrapper">
                             <i class="fas fa-search"></i>
@@ -141,7 +142,7 @@
                 <div class="footer-links-col">
                     <h4 class="footer-title">For Candidates</h4>
                     <ul class="footer-list">
-                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="404page.html">Browse Jobs</a></li>
                         <li><a href="404page.html">Browse Categories</a></li>
                         <li><a href="404page.html">Candidate Dashboard</a></li>
                         <li><a href="404page.html">Job Alerts</a></li>
@@ -169,6 +170,14 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
     <script>
         let companiesData = [];
         let filteredCompanies = [];
@@ -295,7 +304,7 @@
             const primaryLocation = company.locations[0];
 
             return `
-                <div class="company-card" data-company="${company.name.toLowerCase()}">
+                <div class="company-card" data-company="${company.name.toLowerCase()}" data-aos='fade-down'>
                     <div class="company-banner-img"></div>
                     <div class="company-logo-wrapper">
                         <img src="${company.logo}" alt="${company.name}" class="company-logo">

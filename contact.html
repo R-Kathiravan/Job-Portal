@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -54,7 +55,7 @@
         <div class="container">
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="info-card">
+                    <div class="info-card" data-aos="fade-up">
                         <div class="info-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
@@ -62,7 +63,7 @@
                         <p>Stackly Phase 1<br>Salem, Tamil Nadu</p>
                     </div>
 
-                    <div class="info-card">
+                    <div class="info-card" data-aos="fade-up">
                         <div class="info-icon">
                             <i class="fas fa-phone-alt"></i>
                         </div>
@@ -70,7 +71,7 @@
                         <p>+91 9876543210<br>Mon - Fri: 9AM - 6PM PST</p>
                     </div>
 
-                    <div class="info-card">
+                    <div class="info-card" data-aos="fade-up">
                         <div class="info-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
@@ -78,7 +79,7 @@
                         <p>support@thestackly.com<br>careers@thestackly.com</p>
                     </div>
 
-                    <div class="info-card">
+                    <div class="info-card" data-aos="fade-up">
                         <div class="info-icon">
                             <i class="fas fa-comment-dots"></i>
                         </div>
@@ -87,7 +88,7 @@
                         <button class="btn btn-primary chat-btn" onclick="openChat()">Start Chat</button>
                     </div>
                 </div>
-                <div class="contact-form-wrapper">
+                <div class="contact-form-wrapper" data-aos="fade-down">
                     <div class="form-header">
                         <h2>Send Us a Message</h2>
                         <p>Fill out the form below and we'll get back to you within 24 hours.</p>
@@ -114,7 +115,7 @@
 
                             <div class="form-group">
                                 <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                                <input type="number" id="phone" name="phone" placeholder="+1 (555) 000-0000">
                             </div>
 
                             <div class="form-group">
@@ -164,7 +165,7 @@
                 </div>
             </div>
         </div>
-        <section class="faq-section">
+        <section class="faq-section" data-aos="fade-down">
             <h2>Frequently Asked Questions</h2>
             <div class="faq-grid">
                 <div class="faq-item">
@@ -185,7 +186,7 @@
                     <p>Yes! Visit our Services page to learn about our professional resume review service.</p>
                 </div>
         </section>
-        <section class="map-section">
+        <section class="map-section" data-aos="fade-up">
             <h2>Find Our Office</h2>
             <div class="map-container">
                 <div class="map-placeholder">
@@ -236,7 +237,7 @@
                 <div class="footer-links-col">
                     <h4 class="footer-title">For Candidates</h4>
                     <ul class="footer-list">
-                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="404page.html">Browse Jobs</a></li>
                         <li><a href="404page.html">Browse Categories</a></li>
                         <li><a href="404page.html">Candidate Dashboard</a></li>
                         <li><a href="404page.html">Job Alerts</a></li>
@@ -264,6 +265,14 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const form = document.getElementById('contactForm');
@@ -280,7 +289,7 @@
 
                     setTimeout(() => {
                         window.location.href = '404page.html';
-                    }, 1500);
+                    }, 1000);
                 }
             });
 

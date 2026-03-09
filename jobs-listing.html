@@ -14,6 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -293,7 +294,7 @@
                 <div class="footer-links-col">
                     <h4 class="footer-title">For Candidates</h4>
                     <ul class="footer-list">
-                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="404page.html">Browse Jobs</a></li>
                         <li><a href="404page.html">Browse Categories</a></li>
                         <li><a href="404page.html">Candidate Dashboard</a></li>
                         <li><a href="404page.html">Job Alerts</a></li>
@@ -321,6 +322,14 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             let allJobs = [];
@@ -426,7 +435,7 @@
                 const tagsHTML = tags.map(tag => `<span class="skill-tag">${tag}</span>`).join('');
 
                 return `
-                    <div class="job-card-listing" data-job-id="${job.id}">
+                    <div class="job-card-listing" data-job-id="${job.id}"  data-aos="fade-up">
                         <div class="card-header">
                             <div class="company-logo-wrapper">
                                 <img src="${job.logo}" alt="${job.company}" class="company-logo">

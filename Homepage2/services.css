@@ -125,6 +125,7 @@
 .recruitment-section {
     padding: 100px 0;
     background-color: var(--color-bg-body);
+    overflow-x: hidden;
 }
 
 .recruitment-grid {

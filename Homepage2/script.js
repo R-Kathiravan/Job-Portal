@@ -46,8 +46,8 @@ const impactNumbers = document.querySelectorAll('.impact-number');
 const animateCounter = (element) => {
     const target = parseInt(element.getAttribute('data-target'));
     const suffix = element.getAttribute('data-suffix') || '';
-    const duration = 2000; 
-    const increment = target / (duration / 16); 
+    const duration = 2000;
+    const increment = target / (duration / 16);
 
     let current = 0;
 
@@ -67,7 +67,7 @@ const animateCounter = (element) => {
 
 
 const observerOptions = {
-    threshold: 0.5,
+    threshold: 0.2,
     rootMargin: '0px'
 };
 
@@ -102,13 +102,13 @@ const talentObserver = new IntersectionObserver((entries) => {
             cards.forEach((card, index) => {
                 setTimeout(() => {
                     card.classList.add('visible');
-                }, index * 100); 
+                }, index * 100);
             });
 
             talentObserver.unobserve(grid);
         }
     });
-}, { threshold: 0.2 });
+}, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
 const talentGrid = document.querySelector('.talent-grid');
 if (talentGrid) {
@@ -125,22 +125,22 @@ const timelineLine = document.querySelector('.timeline-line');
 const timelineObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            
+
             if (timelineLine) {
                 timelineLine.classList.add('draw');
             }
 
-            
+
             timelineSteps.forEach((step, index) => {
                 setTimeout(() => {
                     step.classList.add('visible');
-                }, index * 400); 
+                }, index * 400);
             });
 
             timelineObserver.unobserve(entry.target);
         }
     });
-}, { threshold: 0.3 });
+}, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
 const timeline = document.querySelector('.timeline');
 if (timeline) {
@@ -156,7 +156,7 @@ const sliderDots = document.querySelectorAll('.dot');
 const successSlider = document.querySelector('.success-stories-slider');
 let currentSlide = 0;
 let slideInterval;
-const slideDuration = 5000; 
+const slideDuration = 5000;
 
 const showSlide = (index) => {
     successCards.forEach((card, i) => {
@@ -222,12 +222,12 @@ const methodologyObserver = new IntersectionObserver((entries) => {
             methodologySteps.forEach((step, index) => {
                 setTimeout(() => {
                     step.classList.add('visible');
-                }, index * 200); 
+                }, index * 200);
             });
             methodologyObserver.unobserve(entry.target);
         }
     });
-}, { threshold: 0.2 });
+}, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
 const methodologyGrid = document.querySelector('.methodology-grid');
 if (methodologyGrid) {
@@ -246,12 +246,12 @@ const impactObserver = new IntersectionObserver((entries) => {
             impactCards.forEach((card, index) => {
                 setTimeout(() => {
                     card.classList.add('visible');
-                }, index * 150); 
+                }, index * 150);
             });
             impactObserver.unobserve(entry.target);
         }
     });
-}, { threshold: 0.2 });
+}, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
 const impactSection = document.querySelector('.impact-grid');
 if (impactSection) {
@@ -270,12 +270,12 @@ const teamObserver = new IntersectionObserver((entries) => {
             teamCards.forEach((card, index) => {
                 setTimeout(() => {
                     card.classList.add('visible');
-                }, index * 100); 
+                }, index * 100);
             });
             teamObserver.unobserve(entry.target);
         }
     });
-}, { threshold: 0.2 });
+}, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
 const teamGrid = document.querySelector('.team-grid');
 if (teamGrid) {
@@ -294,12 +294,12 @@ const valueObserver = new IntersectionObserver((entries) => {
             valueCards.forEach((card, index) => {
                 setTimeout(() => {
                     card.classList.add('visible');
-                }, index * 150); 
+                }, index * 150);
             });
             valueObserver.unobserve(entry.target);
         }
     });
-}, { threshold: 0.2 });
+}, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
 const valuesGrid = document.querySelector('.values-grid');
 if (valuesGrid) {
@@ -323,7 +323,7 @@ const recruitmentObserver = new IntersectionObserver((entries) => {
             recruitmentObserver.unobserve(entry.target);
         }
     });
-}, { threshold: 0.2 });
+}, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
 const recruitmentGrid = document.querySelector('.recruitment-grid');
 if (recruitmentGrid) {
@@ -339,12 +339,12 @@ const domainObserver = new IntersectionObserver((entries) => {
             domainCards.forEach((card, index) => {
                 setTimeout(() => {
                     card.classList.add('visible');
-                }, index * 100); 
+                }, index * 100);
             });
             domainObserver.unobserve(entry.target);
         }
     });
-}, { threshold: 0.2 });
+}, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
 const domainsSection = document.querySelector('.domains-grid');
 if (domainsSection) {
